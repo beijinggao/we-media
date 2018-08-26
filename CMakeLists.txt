@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.12)
 
 # Only generate Debug and Release configuration types.
 set(CMAKE_CONFIGURATION_TYPES Debug Release)
+set(CMAKE_CXX_STANDARD 17)
 
 #project name
 project(we_media)
@@ -107,12 +108,12 @@ add_subdirectory(${CEF_LIBCEF_DLL_WRAPPER_PATH} libcef_dll_wrapper)
 
 # Include CEF's test application targets (executes <target>/CMakeLists.txt).
 #add_subdirectory(${CEF_ROOT}/tests/cefclient)
-#add_subdirectory(${CEF_ROOT}/tests/cefsimple)
-#add_subdirectory(${CEF_ROOT}/tests/gtest)
-#add_subdirectory(${CEF_ROOT}/tests/ceftests)
 
 # Allow includes relative to the current source directory.
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
 
 # Configure building of the examples.
 option(WITH_EXAMPLES "Enable or disable building of examples." ON)
@@ -136,6 +137,6 @@ endif()
 
 
 
-set(CMAKE_CXX_STANDARD 17)
 
-add_executable(we_media main.cpp)
+
+add_executable(we_media src/main.cpp)
