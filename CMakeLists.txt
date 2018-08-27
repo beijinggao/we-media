@@ -116,10 +116,10 @@ include_directories(
 )
 
 # Configure building of the examples.
-option(WITH_EXAMPLES "Enable or disable building of examples." ON)
-if(WITH_EXAMPLES)
+option(WITH_SRC "Enable or disable building of src." ON)
+if(WITH_SRC)
     # Include example application targets.
-    add_subdirectory(examples)
+    add_subdirectory(src)
 endif()
 
 # TODO: Include other application targets here.
@@ -128,15 +128,11 @@ endif()
 # Display configuration settings.
 PRINT_CEF_CONFIG()
 
-if(NOT WITH_EXAMPLES)
+if(NOT WITH_SRC)
     message(STATUS "")
     message(STATUS "NOTE: Targets from the examples folder are not included.")
     message(STATUS "Add -DWITH_EXAMPLES=On to the CMake command-line to include them.")
     message(STATUS "")
 endif()
 
-
-
-
-
-add_executable(we_media src/main.cpp)
+#add_executable(we_media src/main.cpp)
