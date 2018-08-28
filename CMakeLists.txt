@@ -112,7 +112,7 @@ add_subdirectory(${CEF_LIBCEF_DLL_WRAPPER_PATH} libcef_dll_wrapper)
 # Allow includes relative to the current source directory.
 include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        #${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 # Display configuration settings.
@@ -234,4 +234,4 @@ endmacro()
 #add_subdirectory(src/minimal)
 
 
-add_executable(we_media src/main.cpp)
+add_executable(we_media src/main.cpp src/core/request_url.cpp src/core/request_url.h)
