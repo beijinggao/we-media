@@ -2,12 +2,12 @@
 // reserved. Use of this source code is governed by a BSD-style license that can
 // be found in the LICENSE file.
 
-#include "examples/shared/process_helper_mac.h"
+#include "src/shared/process_helper_mac.h"
 
 #include "include/cef_app.h"
 
-#include "examples/shared/app_factory.h"
-#include "examples/shared/main_util.h"
+#include "src/shared/app_factory.h"
+#include "src/shared/main_util.h"
 
 namespace shared {
 

@@ -2,9 +2,9 @@
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
-#include "examples/minimal/client_minimal.h"
+#include "src/minimal/client_minimal.h"
 
-#include "examples/shared/client_util.h"
+#include "src/shared/client_util.h"
 
 namespace minimal {
 
