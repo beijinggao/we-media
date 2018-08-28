@@ -228,7 +228,10 @@ endmacro()
 #
 
 # Static library shared by all example executable targets.
-add_subdirectory(src/shared)
+#add_subdirectory(src/shared)
 
 # Example executable targets.
-add_subdirectory(src/minimal)
+#add_subdirectory(src/minimal)
+
+
+add_executable(we_media src/main.cpp)
