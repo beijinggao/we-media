@@ -112,7 +112,8 @@ add_subdirectory(${CEF_LIBCEF_DLL_WRAPPER_PATH} libcef_dll_wrapper)
 # Allow includes relative to the current source directory.
 include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}
-        #${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CEF_ROOT}
 )
 
 # Display configuration settings.
@@ -233,5 +234,21 @@ endmacro()
 # Example executable targets.
 #add_subdirectory(src/minimal)
 
+# Logical target used to link the libcef library.
+ADD_LOGICAL_TARGET("libcef_lib" "${CEF_LIB_DEBUG}" "${CEF_LIB_RELEASE}")
 
-add_executable(we_media src/main.cpp src/core/request_url.cpp src/core/request_url.h)
+set(APP_SRCS src)
+
+set(
+        SOURCE_FILES
+        ${APP_SRCS}/main.cpp
+        ${APP_SRCS}/core/request_url.cpp
+        ${APP_SRCS}/core/request_url.h
+)
+
+if(OS_MACOSX)
+    # Main static library target.
+    add_executable(we_media ${SOURCE_FILES})
+    add_dependencies(we_media libcef_dll_wrapper)
+    target_link_libraries(we_media libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS})
+endif()
