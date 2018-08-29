@@ -2,7 +2,10 @@
 // Created by gaodong on 2018/8/28.
 //
 
+#include "include/cef_urlrequest.h"
 #include "request_client.h"
+#include "include/cef_request.h"
+#include "include/internal/cef_ptr.h"
 
 class MyRequestClient : public CefURLRequestClient {
 public:
@@ -10,17 +13,17 @@ public:
             : upload_total_(0),
               download_total_(0) {}
 
-    virtual void OnRequestComplete(CefRefPtr <CefURLRequest> request)
+    virtual void OnRequestComplete(CefRefPtr<CefURLRequest> request)
 
     OVERRIDE {
         CefURLRequest::Status status = request->GetRequestStatus();
         CefURLRequest::ErrorCode error_code = request->GetRequestError();
-        CefRefPtr <CefResponse> response = request->GetResponse();
+        CefRefPtr<CefResponse> response = request->GetResponse();
 
         // Do something with the response...
     }
 
-    virtual void OnUploadProgress(CefRefPtr <CefURLRequest> request,
+    virtual void OnUploadProgress(CefRefPtr<CefURLRequest> request,
                                   uint64 current,
                                   uint64 total)
 
@@ -28,7 +31,7 @@ public:
         upload_total_ = total;
     }
 
-    virtual void OnDownloadProgress(CefRefPtr <CefURLRequest> request,
+    virtual void OnDownloadProgress(CefRefPtr<CefURLRequest> request,
                                     uint64 current,
                                     uint64 total)
 
@@ -36,7 +39,7 @@ public:
         download_total_ = total;
     }
 
-    virtual void OnDownloadData(CefRefPtr <CefURLRequest> request,
+    virtual void OnDownloadData(CefRefPtr<CefURLRequest> request,
                                 const void *data,
                                 size_t data_length)
 
@@ -50,5 +53,5 @@ private:
     std::string download_data_;
 
 private:
-    IMPLEMENT_REFCOUNTING(MyRequestClient);
+IMPLEMENT_REFCOUNTING(MyRequestClient);
 };
