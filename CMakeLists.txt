@@ -239,11 +239,11 @@ ADD_LOGICAL_TARGET("libcef_lib" "${CEF_LIB_DEBUG}" "${CEF_LIB_RELEASE}")
 
 set(APP_SRCS src)
 
-set(
+file(GLOB_RECURSE
         SOURCE_FILES
-        ${APP_SRCS}/main.cpp
-        ${APP_SRCS}/core/request_url.cpp
-        ${APP_SRCS}/core/request_url.h
+        ${APP_SRCS}/*.cpp
+        ${APP_SRCS}/core/*.cpp
+        ${APP_SRCS}/core/*.h
 )
 
 if(OS_MACOSX)
