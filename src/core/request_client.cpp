@@ -13,9 +13,7 @@ public:
             : upload_total_(0),
               download_total_(0) {}
 
-    virtual void OnRequestComplete(CefRefPtr<CefURLRequest> request)
-
-    OVERRIDE {
+    virtual void OnRequestComplete(CefRefPtr<CefURLRequest> request) OVERRIDE {
         CefURLRequest::Status status = request->GetRequestStatus();
         CefURLRequest::ErrorCode error_code = request->GetRequestError();
         CefRefPtr<CefResponse> response = request->GetResponse();
@@ -25,25 +23,19 @@ public:
 
     virtual void OnUploadProgress(CefRefPtr<CefURLRequest> request,
                                   uint64 current,
-                                  uint64 total)
-
-    OVERRIDE {
+                                  uint64 total) OVERRIDE {
         upload_total_ = total;
     }
 
     virtual void OnDownloadProgress(CefRefPtr<CefURLRequest> request,
                                     uint64 current,
-                                    uint64 total)
-
-    OVERRIDE {
+                                    uint64 total) OVERRIDE {
         download_total_ = total;
     }
 
     virtual void OnDownloadData(CefRefPtr<CefURLRequest> request,
                                 const void *data,
-                                size_t data_length)
-
-    OVERRIDE {
+                                size_t data_length) OVERRIDE {
         download_data_ += std::string(static_cast<const char *>(data), data_length);
     }
 

@@ -176,18 +176,18 @@ endif()
 # Set the configuration-specific binary output directory.
 if(GEN_NINJA OR GEN_MAKEFILES)
     # Force Ninja and Make to create a subdirectory named after the configuration.
-    set(EXAMPLE_TARGET_OUT_DIR "${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}")
+    set(WEMEDIA_TARGET_OUT_DIR "${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}")
 else()
-    set(EXAMPLE_TARGET_OUT_DIR "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
+    set(WEMEDIA_TARGET_OUT_DIR "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
 endif()
 
 # Set properties common to all example targets.
 macro(SET_EXAMPLE_PROPERTIES target)
     # Output all binaries to the configuration-specific build directory.
     set_target_properties(${target} PROPERTIES
-            ARCHIVE_OUTPUT_DIRECTORY "${EXAMPLE_TARGET_OUT_DIR}"
-            RUNTIME_OUTPUT_DIRECTORY "${EXAMPLE_TARGET_OUT_DIR}"
-            LIBRARY_OUTPUT_DIRECTORY "${EXAMPLE_TARGET_OUT_DIR}")
+            ARCHIVE_OUTPUT_DIRECTORY "${WEMEDIA_TARGET_OUT_DIR}"
+            RUNTIME_OUTPUT_DIRECTORY "${WEMEDIA_TARGET_OUT_DIR}"
+            LIBRARY_OUTPUT_DIRECTORY "${WEMEDIA_TARGET_OUT_DIR}")
 
     if(OS_MACOSX OR OS_WINDOWS)
         # Place the target in the "examples" folder in Visual Studio and Xcode.
@@ -227,6 +227,7 @@ endmacro()
 #
 # Target configuration.
 #
+set(WEMEDIA_TARGET "we-media")
 
 # Static library shared by all example executable targets.
 #add_subdirectory(src/shared)
@@ -241,14 +242,87 @@ set(APP_SRCS src)
 
 file(GLOB_RECURSE
         SOURCE_FILES
-        ${APP_SRCS}/*.cpp
-        ${APP_SRCS}/core/*.cpp
-        ${APP_SRCS}/core/*.h
+        #${APP_SRCS}/*.cpp
+        #${APP_SRCS}/*.h
+        ${APP_SRCS}/main.cpp
+        ${APP_SRCS}/core/request_url.h
+        ${APP_SRCS}/core/request_url.cpp
+
 )
 
-if(OS_MACOSX)
+#if(OS_MACOSX)
     # Main static library target.
-    add_executable(we_media ${SOURCE_FILES})
-    add_dependencies(we_media libcef_dll_wrapper)
-    target_link_libraries(we_media libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS})
+#    link_directories(${CEF_ROOT}/Release)
+
+#   add_executable(we_media ${SOURCE_FILES})
+#    add_dependencies(we_media libcef_dll_wrapper)
+#    target_link_libraries(we_media libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS})
+#    SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+#endif()
+
+#
+# Mac OS X configuration.
+#
+
+if(OS_MACOSX)
+    # Create source groups for Xcode.
+    SET_EXAMPLE_SOURCE_GROUPS("${SOURCE_FILES}")
+
+    # Output paths for the app bundles.
+    set(WEMEDIA_APP "${WEMEDIA_TARGET_OUT_DIR}/${WEMEDIA_TARGET}.app")
+
+    # Variable referenced from Info.plist files.
+    set(PRODUCT_NAME "${WEMEDIA_TARGET}")
+
+    # Main executable target.
+    add_executable(${WEMEDIA_TARGET} MACOSX_BUNDLE ${SOURCE_FILES})
+    SET_EXAMPLE_EXECUTABLE_TARGET_PROPERTIES(${WEMEDIA_TARGET})
+    #add_dependencies(${WEMEDIA_TARGET})
+    #target_link_libraries(${WEMEDIA_TARGET})
+
+    # Copy files into the main app bundle.
+    add_custom_command(
+            TARGET ${WEMEDIA_TARGET}
+            POST_BUILD
+            # Copy the CEF framework into the Frameworks directory.
+            COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${CEF_BINARY_DIR}/Chromium Embedded Framework.framework"
+            "${WEMEDIA_APP}/Contents/Frameworks/Chromium Embedded Framework.framework"
+            VERBATIM
+    )
+
+    # Fix the framework rpath in the main executable.
+    FIX_MACOSX_MAIN_FRAMEWORK_RPATH(${WEMEDIA_TARGET})
+
+    if(NOT ${CMAKE_GENERATOR} STREQUAL "Xcode")
+        # Manually process and copy over resource files.
+        # The Xcode generator handles this via the set_target_properties RESOURCE directive.
+        # Remove these prefixes from input file paths.
+        set(PREFIXES
+                "../shared/resources/mac/"
+                )
+        COPY_MACOSX_RESOURCES("${SOURCE_FILES}" "${PREFIXES}" "${WEMEDIA_TARGET}" "${CMAKE_CURRENT_SOURCE_DIR}" "${WEMEDIA_APP}")
+    endif()
+endif()
+
+
+#
+# Windows configuration.
+#
+
+if(OS_WINDOWS)
+    # Add resources to the sources variable for convenience.
+    set(EXAMPLE_SRCS
+            ${EXAMPLE_SRCS}
+            ${EXAMPLE_RESOURCES_SRCS}
+            )
+
+    # Create source groups for Visual Studio.
+    SET_EXAMPLE_SOURCE_GROUPS("${EXAMPLE_SRCS}")
+
+    # Executable target.
+    add_executable(${EXAMPLE_TARGET} WIN32 ${EXAMPLE_SRCS})
+    SET_EXAMPLE_EXECUTABLE_TARGET_PROPERTIES(${EXAMPLE_TARGET})
+    add_dependencies(${EXAMPLE_TARGET} shared)
+    target_link_libraries(${EXAMPLE_TARGET} shared)
 endif()

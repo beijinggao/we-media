@@ -7,6 +7,11 @@
 #include "include/internal/cef_ptr.h"
 
 void RequestUrl::parseUrl(std::string url) {
+
+    printf("%s", url.c_str());
+
+
+
     // Create a CefRequest object.
     CefRefPtr<CefRequest> request = CefRequest::Create();
 
