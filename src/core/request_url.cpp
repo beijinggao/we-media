@@ -5,13 +5,29 @@
 #include "request_url.h"
 #include "include/cef_request.h"
 #include "include/internal/cef_ptr.h"
+#include "request_client.h"
+#include "include/cef_urlrequest.h"
 
 void RequestUrl::parseUrl(std::string url) {
 
     printf("%s", url.c_str());
 
 
+    // Set up the CefRequest object.
+    CefRefPtr<CefRequest> request = CefRequest::Create();
+    // Populate |request| as shown above...
+    request->SetURL(url);
+    request->SetMethod("GET");
 
+    // Create the client instance.
+    CefRefPtr<RequestClient> client = new RequestClient();
+
+    // Start the request. MyRequestClient callbacks will be executed asynchronously.
+    CefRefPtr<CefURLRequest> url_request = CefURLRequest::Create(request, client.get(), NULL);
+    // To cancel the request: url_request->Cancel();
+
+
+/*
     // Create a CefRequest object.
     CefRefPtr<CefRequest> request = CefRequest::Create();
 
@@ -34,6 +50,6 @@ void RequestUrl::parseUrl(std::string url) {
     CefRefPtr<CefPostDataElement> element = CefPostDataElement::Create();
     element->SetToBytes(upload_data.size(), upload_data.c_str());
     postData->AddElement(element);
-    request->SetPostData(postData);
+    request->SetPostData(postData);*/
 
 }

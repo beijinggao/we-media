@@ -7,10 +7,31 @@
 
 #include "include/cef_request.h"
 #include "include/internal/cef_ptr.h"
+#include "include/cef_urlrequest.h"
 
 
+class RequestClient : public CefURLRequestClient {
 
-class request_client {
+public:
+    RequestClient() : upload_total_(0),
+                      download_total_(0) {}
+
+    void OnRequestComplete(CefRefPtr<CefURLRequest> request) OVERRIDE;
+
+    virtual void OnUploadProgress(CefRefPtr<CefURLRequest> request, uint64 current, uint64 total) OVERRIDE;
+
+    virtual void OnDownloadProgress(CefRefPtr<CefURLRequest> request, uint64 current, uint64 total) OVERRIDE;
+
+    virtual void OnDownloadData(CefRefPtr<CefURLRequest> request, const void *data, size_t data_length) OVERRIDE;
+
+
+private:
+    uint64 upload_total_;
+    uint64 download_total_;
+    std::string download_data_;
+    
+private:
+IMPLEMENT_REFCOUNTING(RequestClient);
 
 };
 

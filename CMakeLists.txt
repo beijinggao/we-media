@@ -242,11 +242,11 @@ set(APP_SRCS src)
 
 file(GLOB_RECURSE
         SOURCE_FILES
-        #${APP_SRCS}/*.cpp
-        #${APP_SRCS}/*.h
-        ${APP_SRCS}/main.cpp
-        ${APP_SRCS}/core/request_url.h
-        ${APP_SRCS}/core/request_url.cpp
+        ${APP_SRCS}/*.cpp
+        ${APP_SRCS}/*.h
+        #${APP_SRCS}/main.cpp
+        #${APP_SRCS}/core/request_url.h
+        #${APP_SRCS}/core/request_url.cpp
 
 )
 
