@@ -4,9 +4,7 @@
 
 #include "request_url.h"
 #include "include/cef_request.h"
-#include "include/internal/cef_ptr.h"
 #include "request_client.h"
-#include "include/cef_urlrequest.h"
 
 void RequestUrl::parseUrl(std::string url) {
 

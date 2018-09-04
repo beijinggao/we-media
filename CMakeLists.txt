@@ -277,8 +277,8 @@ if(OS_MACOSX)
     # Main executable target.
     add_executable(${WEMEDIA_TARGET} MACOSX_BUNDLE ${SOURCE_FILES})
     SET_EXAMPLE_EXECUTABLE_TARGET_PROPERTIES(${WEMEDIA_TARGET})
-    #add_dependencies(${WEMEDIA_TARGET})
-    #target_link_libraries(${WEMEDIA_TARGET})
+    add_dependencies(${WEMEDIA_TARGET} libcef_dll_wrapper)
+    target_link_libraries(${WEMEDIA_TARGET} libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS})
 
     # Copy files into the main app bundle.
     add_custom_command(
