@@ -3,12 +3,12 @@
 //
 
 #include "request_url.h"
-#include "include/cef_request.h"
-#include "request_client.h"
 
 void RequestUrl::parseUrl(std::string url) {
 
     printf("%s", url.c_str());
+    std::cout << "************************" << std::endl;
+    std::cout << "Hello, World!" << std::endl;
 
 
     // Set up the CefRequest object.
@@ -17,11 +17,20 @@ void RequestUrl::parseUrl(std::string url) {
     request->SetURL(url);
     request->SetMethod("GET");
 
+    std::cout << "************************" << std::endl;
+    std::cout << request->GetURL() << std::endl;
+
     // Create the client instance.
     CefRefPtr<RequestClient> client = new RequestClient();
 
     // Start the request. MyRequestClient callbacks will be executed asynchronously.
     CefRefPtr<CefURLRequest> url_request = CefURLRequest::Create(request, client.get(), NULL);
+
+    CefRefPtr<CefResponse> response = url_request->GetResponse();
+    std::cout << "************************" << std::endl;
+    std::cout << "Hello, World!" << std::endl;
+    std::cout << response << std::endl;
+
     // To cancel the request: url_request->Cancel();
 
 

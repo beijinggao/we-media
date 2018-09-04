@@ -6,6 +6,10 @@
 #define WE_MEDIA_REQUEST_URL_H
 
 #include <string>
+#include <iostream>
+#include "request_url.h"
+#include "include/cef_request.h"
+#include "request_client.h"
 
 class RequestUrl {
 

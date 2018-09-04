@@ -8,6 +8,7 @@
 #include "include/cef_request.h"
 #include "include/internal/cef_ptr.h"
 #include "include/cef_urlrequest.h"
+#include <iostream>
 
 
 class RequestClient : public CefURLRequestClient {
