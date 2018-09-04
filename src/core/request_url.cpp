@@ -4,11 +4,22 @@
 
 #include "request_url.h"
 
+
+void RequestUrl::Execute() {
+    parseUrl("");
+}
+
 void RequestUrl::parseUrl(std::string url) {
+
+    /*RequestClient *client = new RequestClient(new PrintUrlReqCallback);
+    std::string host("http://www.baidu.com");
+    client->Get(host);*/
+
+
     // Set up the CefRequest object.
     CefRefPtr<CefRequest> request = CefRequest::Create();
     // Populate |request| as shown above...
-    request->SetURL("http://www.runoob.com/cplusplus/cpp-conditional-operator.html");
+    request->SetURL("http://www.baidu.com");
     request->SetMethod("GET");
 
     // Optionally specify custom headers.
@@ -24,15 +35,32 @@ void RequestUrl::parseUrl(std::string url) {
     std::cout << request->GetMethod().ToString() << std::endl;
 
     // Create the client instance.
-    CefRefPtr<RequestClient> client = new RequestClient();
+    //CefRefPtr<RequestClient> client = new RequestClient();
+
+    CefRefPtr<CefURLRequest> url_request = CefURLRequest::Create(request, new RequestClient(new PrintUrlReqCallback), NULL);
+
+    //(new RequestClient(new PrintUrlReqCallback))->Request(request);
     std::string aa = !request.get() ? "aaaa" : "bbbb";
 
-    std::cout << aa << std::endl;
+
+    // Post() test
+    /*CefRefPtr<CefPostData> data = CefPostData::Create();
+    CefRefPtr<CefPostDataElement> element = CefPostDataElement::Create();
+    const char szData[] = "Hello World!";
+    element->SetToBytes(sizeof(szData) - 1, (const void*)szData);
+    data->AddElement(element);
+    CefRequest::HeaderMap headers;
+    headers.insert({"Content-Type", "text/plain"});
+    headers.insert({"Accept", "text/plain"});
+    (new RequestClient(new PrintUrlReqCallback))->Post("http://www.baidu.com", data, headers);*/
+
+
+    /*std::cout << aa << std::endl;
     std::cout << !client.get() << std::endl;
 
     // Start the request. MyRequestClient callbacks will be executed asynchronously.
     CefRefPtr<CefURLRequest> url_request = CefURLRequest::Create(request, client, NULL);
-    std::cout << url_request->GetRequest()->GetURL().ToString().length() << std::endl;
+    std::cout << url_request->GetRequest()->GetURL().ToString().length() << std::endl;*/
 
     // To cancel the request: url_request->Cancel();
 

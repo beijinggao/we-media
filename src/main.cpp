@@ -8,7 +8,8 @@
 int main(int argc, char *argv[]) {
     std::cout << "Hello, World!" << std::endl;
     RequestUrl requestUrl;
-    requestUrl.parseUrl("wwww.baidu.com");
+    //requestUrl.parseUrl("wwww.baidu.com");
+    requestUrl.Execute();
 
     return 0;
 }
