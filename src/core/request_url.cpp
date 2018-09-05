@@ -4,20 +4,14 @@
 
 #include "request_url.h"
 
-
-void RequestUrl::Execute() {
-    parseUrl("");
-}
-
 void RequestUrl::parseUrl(std::string url) {
+    RequestClient::RequestCompleteCallback callback;
 
-    /*RequestClient *client = new RequestClient(new PrintUrlReqCallback);
-    std::string host("http://www.baidu.com");
-    client->Get(host);*/
-
+    CefRefPtr<RequestClient> client = new RequestClient(callback);
+    client->RunTest();
 
     // Set up the CefRequest object.
-    CefRefPtr<CefRequest> request = CefRequest::Create();
+    /*CefRefPtr<CefRequest> request = CefRequest::Create();
     // Populate |request| as shown above...
     request->SetURL("http://www.baidu.com");
     request->SetMethod("GET");
@@ -33,15 +27,17 @@ void RequestUrl::parseUrl(std::string url) {
     std::cout << requestUrl.ToString() << std::endl;
     std::cout << requestUrl.ToString().length() << std::endl;
     std::cout << request->GetMethod().ToString() << std::endl;
-
-    // Create the client instance.
-    //CefRefPtr<RequestClient> client = new RequestClient();
-
-    CefRefPtr<CefURLRequest> url_request = CefURLRequest::Create(request, new RequestClient(new PrintUrlReqCallback), NULL);
-
-    //(new RequestClient(new PrintUrlReqCallback))->Request(request);
     std::string aa = !request.get() ? "aaaa" : "bbbb";
 
+
+    CefRefPtr<CefURLRequest> url_request = CefURLRequest::Create(request, client, NULL);
+    std::cout << url_request->GetResponse()->GetStatus() << std::endl;
+    std::cout << "************************" << std::endl;*/
+
+
+    /*RequestClient *client = new RequestClient(new PrintUrlReqCallback);
+    std::string host("http://www.baidu.com");
+    client->Get(host);*/
 
     // Post() test
     /*CefRefPtr<CefPostData> data = CefPostData::Create();
