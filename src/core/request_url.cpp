@@ -9,6 +9,8 @@ void RequestUrl::parseUrl(std::string url) {
 
     CefRefPtr<RequestClient> client = new RequestClient(callback);
     client->RunTest();
+    std::cout << "aaaaaabbb" << client->download_data_ << std::endl;
+    std::cout << "cccccc" << client->request_complete_ct_ << std::endl;
 
     // Set up the CefRequest object.
     /*CefRefPtr<CefRequest> request = CefRequest::Create();

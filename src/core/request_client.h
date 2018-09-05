@@ -10,6 +10,8 @@
 #include "include/cef_urlrequest.h"
 #include "include/wrapper/cef_helpers.h"
 #include "include/cef_waitable_event.h"
+#include "include/wrapper/cef_closure_task.h"
+#include "include/base/cef_bind.h"
 //#include "tests/gtest/include/gtest/gtest.h"
 #include <iostream>
 
@@ -37,6 +39,8 @@ public:
               error_code_(ERR_NONE),
               response_was_cached_(false) {
         event_ = CefWaitableEvent::CreateWaitableEvent(true, false);
+
+        std::cout << complete_callback_.is_null() << std::endl;
         //EXPECT_FALSE(complete_callback_.is_null());
     }
 
@@ -68,7 +72,10 @@ public:
         request->SetMethod("GET");
         request->SetURL("http://www.baidu.com");
 
+        std::cout << "*********************" << std::endl;
         CefURLRequest::Create(request, this, NULL);
+        std::cout << "*********************" << std::endl;
+
     }
 
     void CompleteOnUIThread() {
@@ -78,10 +85,15 @@ public:
     }
 
     void RunTest() {
-        CefPostTask(TID_UI, base::Bind(&RequestClient::RunOnUIThread, this));
+        auto task = base::Bind(&RequestClient::RunOnUIThread, this);
+        std::cout << "*********************" << std::endl;
+
+        CefPostTask(TID_UI,task);
+        std::cout << "*********aaa************" << std::endl;
 
         // Wait for the test to complete.
-        event_->Wait();
+        //event_->Wait();
+        event_->TimedWait(500);
     }
 
 

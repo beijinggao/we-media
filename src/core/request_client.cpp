@@ -14,12 +14,15 @@ void RequestClient::OnRequestComplete(CefRefPtr<CefURLRequest> request) {
     error_code_ = request->GetRequestError();
     response_was_cached_ = request->ResponseWasCached();
     response_ = request->GetResponse();
+
+    std::cout << "*********************" << std::endl;
     if (response_) {
         //EXPECT_TRUE(response_->IsReadOnly());
         std::cout << response_->IsReadOnly() << std::endl;
     }
 
     complete_callback_.Run(this);
+    CefPostTask(TID_UI, base::Bind(&RequestClient::CompleteOnUIThread, this));
 
 
 }
