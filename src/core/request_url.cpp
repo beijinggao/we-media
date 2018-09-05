@@ -5,6 +5,7 @@
 #include "request_url.h"
 
 void RequestUrl::parseUrl(std::string url) {
+
     RequestClient::RequestCompleteCallback callback;
 
     CefRefPtr<RequestClient> client = new RequestClient(callback);

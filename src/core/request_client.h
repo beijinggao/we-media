@@ -38,6 +38,7 @@ public:
               status_(UR_UNKNOWN),
               error_code_(ERR_NONE),
               response_was_cached_(false) {
+        CEF_REQUIRE_UI_THREAD();
         event_ = CefWaitableEvent::CreateWaitableEvent(true, false);
 
         std::cout << complete_callback_.is_null() << std::endl;
@@ -68,6 +69,7 @@ public:
 public:
     void RunOnUIThread() {
         CefCurrentlyOn(TID_UI);
+        std::cout << "eeeeeeeeee" << CefCurrentlyOn(TID_UI) << std::endl;
         CefRefPtr<CefRequest> request = CefRequest::Create();
         request->SetMethod("GET");
         request->SetURL("http://www.baidu.com");
@@ -79,21 +81,21 @@ public:
     }
 
     void CompleteOnUIThread() {
+        CefCurrentlyOn(TID_UI);
         //EXPECT_UI_THREAD();
         // Signal that the test is complete.
         event_->Signal();
     }
 
     void RunTest() {
-        auto task = base::Bind(&RequestClient::RunOnUIThread, this);
         std::cout << "*********************" << std::endl;
 
-        CefPostTask(TID_UI,task);
+        CefPostTask(TID_UI, base::Bind(&RequestClient::RunOnUIThread, this));
         std::cout << "*********aaa************" << std::endl;
 
         // Wait for the test to complete.
-        //event_->Wait();
-        event_->TimedWait(500);
+        event_->Wait();
+        //event_->TimedWait(500);
     }
 
 

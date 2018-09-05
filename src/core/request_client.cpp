@@ -5,6 +5,7 @@
 #include "request_client.h"
 
 void RequestClient::OnRequestComplete(CefRefPtr<CefURLRequest> request) {
+    CEF_REQUIRE_UI_THREAD();
 
     request_complete_ct_++;
 
