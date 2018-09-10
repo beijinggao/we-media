@@ -326,3 +326,6 @@ if(OS_WINDOWS)
     add_dependencies(${EXAMPLE_TARGET} shared)
     target_link_libraries(${EXAMPLE_TARGET} shared)
 endif()
+
+# Example executable targets.
+add_subdirectory(src/cefclient)
