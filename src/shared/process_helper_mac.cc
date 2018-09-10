@@ -1,40 +1,36 @@
-// Copyright (c) 2017 The Chromium Embedded Framework Authors. All rights
+// Copyright (c) 2012 The Chromium Embedded Framework Authors. All rights
 // reserved. Use of this source code is governed by a BSD-style license that can
 // be found in the LICENSE file.
 
-#include "src/shared/process_helper_mac.h"
-
 #include "include/cef_app.h"
 
-#include "src/shared/app_factory.h"
-#include "src/shared/main_util.h"
+#include "tests/shared/common/client_app_other.h"
+#include "tests/shared/renderer/client_app_renderer.h"
 
-namespace shared {
+namespace client {
 
-// Entry point function for sub-processes.
-int main(int argc, char* argv[]) {
-  // Provide CEF with command-line arguments.
+int RunMain(int argc, char* argv[]) {
   CefMainArgs main_args(argc, argv);
 
-  // Create a temporary CommandLine object.
-  CefRefPtr<CefCommandLine> command_line = CreateCommandLine(main_args);
+  // Parse command-line arguments.
+  CefRefPtr<CefCommandLine> command_line = CefCommandLine::CreateCommandLine();
+  command_line->InitFromArgv(argc, argv);
 
-  // Create a CefApp of the correct process type. The browser process is handled
-  // by main_mac.mm.
+  // Create a ClientApp of the correct type.
   CefRefPtr<CefApp> app;
-  switch (GetProcessType(command_line)) {
-    case PROCESS_TYPE_RENDERER:
-      app = CreateRendererProcessApp();
-      break;
-    case PROCESS_TYPE_OTHER:
-      app = CreateOtherProcessApp();
-      break;
-    default:
-      break;
-  }
+  ClientApp::ProcessType process_type = ClientApp::GetProcessType(command_line);
+  if (process_type == ClientApp::RendererProcess)
+    app = new ClientAppRenderer();
+  else if (process_type == ClientApp::OtherProcess)
+    app = new ClientAppOther();
 
-  // Execute the sub-process.
+  // Execute the secondary process.
   return CefExecuteProcess(main_args, app, NULL);
 }
 
-}  // namespace shared
+}  // namespace client
+
+// Process entry point.
+int main(int argc, char* argv[]) {
+  return client::RunMain(argc, argv);
+}
