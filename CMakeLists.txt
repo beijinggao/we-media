@@ -11,7 +11,7 @@ project(we_media)
 set_property(GLOBAL PROPERTY OS_FOLDERS ON)
 
 # Specify the CEF distribution version.
-set(CEF_VERSION "3.3396.1777.g636f29b")
+set(CEF_VERSION "3.3497.1827.ga4f7e36")
 
 # Determine the platform.
 if("${CMAKE_SYSTEM_NAME}" STREQUAL "Darwin")
