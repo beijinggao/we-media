@@ -175,8 +175,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="190" />
+    <option name="y" value="-16" />
     <option name="width" value="1423" />
     <option name="height" value="775" />
   </component>
@@ -239,36 +240,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.cefsimple">
+  <component name="RunManager">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple_Helper" EXPLICIT_BUILD_TARGET_NAME="all">
-      <envs />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="cefclient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefclient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefclient">
-      <envs />
-    </configuration>
-    <configuration name="cefclient_Helper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefclient_Helper" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple_Helper">
-      <envs />
-    </configuration>
-    <configuration name="cefsimple" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefsimple" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple">
-      <envs />
-    </configuration>
-    <configuration name="cefsimple_Helper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefsimple_Helper" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple_Helper">
-      <envs />
-    </configuration>
-    <configuration name="libcef_dll_wrapper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="libcef_dll_wrapper" CONFIG_NAME="Debug">
-      <envs />
-    </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="1" class="java.lang.String" itemvalue="Application.cefclient" />
-      <item index="2" class="java.lang.String" itemvalue="Application.cefclient_Helper" />
-      <item index="3" class="java.lang.String" itemvalue="Application.cefsimple" />
-      <item index="4" class="java.lang.String" itemvalue="Application.cefsimple_Helper" />
-      <item index="5" class="java.lang.String" itemvalue="Application.libcef_dll_wrapper" />
-    </list>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
