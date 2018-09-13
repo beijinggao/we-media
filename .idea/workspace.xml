@@ -3,10 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="we_media" targetName="cefsimple" />
-      <config projectName="we_media" targetName="cefclient_Helper" />
-      <config projectName="we_media" targetName="libcef_dll_wrapper" />
       <config projectName="we_media" targetName="cefclient" />
-      <config projectName="we_media" targetName="cefsimple_Helper" />
+      <config projectName="we_media" targetName="libcef_dll_wrapper" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -16,17 +14,125 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8f8fdb-50df-47a4-ba54-f6e6bbf46bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/mac/Info.plist" afterPath="$PROJECT_DIR$/src/cefclient/resources/mac/Info.plist" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/mac/helper-Info.plist" afterPath="$PROJECT_DIR$/src/cefclient/resources/mac/helper-Info.plist" />
-      <change beforePath="$PROJECT_DIR$/src/cefsimple/mac/Info.plist" afterPath="$PROJECT_DIR$/src/cefsimple/mac/Info.plist" />
-      <change beforePath="$PROJECT_DIR$/src/cefsimple/mac/helper-Info.plist" afterPath="$PROJECT_DIR$/src/cefsimple/mac/helper-Info.plist" />
-      <change beforePath="$PROJECT_DIR$/src/shared/resources/osr_test.html" afterPath="$PROJECT_DIR$/src/shared/resources/osr_test.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/binding_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/binding_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/binding_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/binding_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/browser_window.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/browser_window.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/browser_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/browser_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_app_delegates_browser.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_app_delegates_browser.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_browser.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_browser.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_browser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_browser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_types.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_types.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/drm_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/drm_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/drm_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/drm_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/image_cache.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/image_cache.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/image_cache.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/image_cache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_dragdrop_events.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_dragdrop_events.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/resource.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/resource.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window_create.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window_create.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/server_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/server_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/server_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/server_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/temp_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/temp_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/test_runner.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/test_runner.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/test_runner.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/test_runner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/common/client_app_delegates_common.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/common/client_app_delegates_common.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/client_app_delegates_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/client_app_delegates_renderer.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_setup.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_setup.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_tests.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_tests.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/binding.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/binding.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/dialogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/draggable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/draggable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/drm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/drm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/localstorage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/localstorage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/other_tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/other_tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/performance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/performance2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/performance2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/preferences.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/response_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/response_filter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/server.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/server.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/transparency.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/transparency.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/urlrequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/urlrequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/websocket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/websocket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/window.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/window.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/xmlhttprequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/xmlhttprequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_app.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_app.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_app.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_app.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_handler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_handler.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_handler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/client_app_browser.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/client_app_browser.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/client_app_browser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/client_app_browser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/extension_util.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/extension_util.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/extension_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/extension_util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/file_util.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/file_util.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/file_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/file_util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/geometry_util.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/geometry_util.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/geometry_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/geometry_util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/browser/resource_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/resource_util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app_other.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app_other.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app_other.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app_other.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/client_switches.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_switches.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/common/client_switches.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_switches.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/resources/osr_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/resources/osr_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/resources/pdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/resources/pdf.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,43 +184,32 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1566702871">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cc" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="we_media" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3027">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cefclient/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7068">
-              <caret line="524" column="55" lean-forward="false" selection-start-line="524" selection-start-column="55" selection-end-line="524" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -183,29 +278,20 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="we_media" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
               <item name="we-media" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="we_media" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
               <item name="we-media" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -240,12 +326,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple_Helper" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="Application.cefclient">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cefclient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefclient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefclient">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cefsimple" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefsimple" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="libcef_dll_wrapper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="libcef_dll_wrapper" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.cefclient" />
+      <item itemvalue="Application.cefsimple" />
+      <item itemvalue="Application.libcef_dll_wrapper" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -283,58 +390,58 @@
       <workItem from="1536659529802" duration="374000" />
       <workItem from="1536718260615" duration="10086000" />
       <workItem from="1536805916705" duration="5377000" />
+      <workItem from="1536855033218" duration="1411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104451000" />
+    <option name="totallyTimeSpent" value="105862000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1423" height="775" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21968617" sideWeight="0.49234137" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32794118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4014706" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32794118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21968617" sideWeight="0.50765866" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21968617" sideWeight="0.50765866" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49234137" visible="true" weight="0.16204691" />
+      <window_info id="Structure" order="1" sideWeight="0.50765866" side_tool="true" weight="0.21968617" />
+      <window_info id="Favorites" order="2" sideWeight="0.50765866" side_tool="true" weight="0.21968617" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3275488" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3275488" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.27874187" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32794118" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42794117" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32794118" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21968617" sideWeight="0.49234137" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21968617" sideWeight="0.50765866" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21968617" sideWeight="0.50765866" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49234137" visible="true" weight="0.21968617" />
+      <window_info id="Structure" order="1" sideWeight="0.50765866" side_tool="true" weight="0.21968617" />
+      <window_info id="Favorites" order="2" sideWeight="0.50765866" side_tool="true" weight="0.21968617" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32794118" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32794118" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.42794117" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,62 +450,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="196" column="67" lean-forward="true" selection-start-line="196" selection-start-column="67" selection-end-line="196" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefsimple/simple_app.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefsimple/simple_app.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefsimple/simple_app.h" />
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefsimple/simple_app.cc" />
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/gtest/src/gtest-all.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1670">
-          <caret line="161" column="20" lean-forward="true" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/cef_paths2.gypi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/cef_paths.gypi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/gtest/src/gtest-all.cc" />
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/cef_paths2.gypi" />
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/cef_paths.gypi" />
     <entry file="file://$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -414,19 +474,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/browser/window_test.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///System/Library/Frameworks/AppKit.framework/Headers/NSResponder.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5196">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///System/Library/Frameworks/AppKit.framework/Headers/NSResponder.h" />
     <entry file="file://$PROJECT_DIR$/src/cefclient/browser/window_test_runner_mac.mm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -441,13 +491,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefclient/browser/binding_test.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefclient/browser/binding_test.h" />
     <entry file="file://$PROJECT_DIR$/src/cefclient/browser/browser_window_std_mac.mm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -457,9 +501,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-997">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-997" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/browser/binding_test.cc">
@@ -483,13 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefclient/browser/browser_window.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefclient/browser/browser_window.h" />
     <entry file="file://$PROJECT_DIR$/src/cefclient/browser/browser_window_std_mac.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -519,26 +555,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/renderer/client_app_delegates_renderer.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/renderer/client_renderer.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
-          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/include/internal/cef_ptr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1237">
-          <caret line="174" column="15" lean-forward="false" selection-start-line="174" selection-start-column="6" selection-end-line="174" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/include/internal/cef_ptr.h" />
     <entry file="file://$PROJECT_DIR$/src/cefclient/renderer/client_renderer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -549,7 +575,7 @@
     <entry file="file://$PROJECT_DIR$/src/cefclient/renderer/performance_test.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
-          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
         </state>
       </provider>
     </entry>
@@ -563,17 +589,11 @@
     <entry file="file://$PROJECT_DIR$/src/cefclient/renderer/performance_test_setup.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="60" column="5" lean-forward="false" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefclient/renderer/performance_test_setup.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/tests/cefclient/renderer/performance_test_setup.h" />
     <entry file="file://$PROJECT_DIR$/src/cefclient/cefclient_mac.mm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6318">
@@ -582,11 +602,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/resources/dialogs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/renderer/performance_test_tests.cc">
       <provider selected="true" editor-type-id="text-editor">
@@ -597,22 +613,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/mac/English.lproj/MainMenu.xib">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5283">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-5283" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/mac/cefsimple.icns">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/mac/English.lproj/InfoPlist.strings">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/mac/Info.plist">
       <provider selected="true" editor-type-id="text-editor">
@@ -622,102 +630,71 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/mac/helper-Info.plist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/cefsimple_mac.mm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="148" column="21" lean-forward="false" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
-          <folding>
-            <element signature="e#242#265#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="148" column="21" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/libcef_dll/wrapper/libcef_dll_wrapper.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="181" column="15" lean-forward="false" selection-start-line="181" selection-start-column="15" selection-end-line="181" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3396.1777.g636f29b_macosx64/libcef_dll/wrapper/libcef_dll_wrapper.cc" />
     <entry file="file://$PROJECT_DIR$/src/cefsimple/process_helper_mac.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/simple_app.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/yapf_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#185#215#0" expanded="false" />
-          </folding>
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/git_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#185#215#0" expanded="false" />
-          </folding>
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/simple_app.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cefsimple/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2529">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding />
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/src/cefclient/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7068">
-          <caret line="524" column="55" lean-forward="false" selection-start-line="524" selection-start-column="55" selection-end-line="524" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="8908">
+          <caret line="524" column="55" selection-start-line="524" selection-start-column="55" selection-end-line="524" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/cefclient/cefclient_win.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3027">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+        <state relative-caret-position="-306" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="335">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
