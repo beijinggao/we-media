@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\simple_app.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\simple_handler.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\cefsimple_win.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\simple_handler_win.cc">
+      <Filter>cefsimple</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\simple_app.h">
+      <Filter>cefsimple</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\simple_handler.h">
+      <Filter>cefsimple</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\resource.h">
+      <Filter>cefsimple</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\res\cefsimple.ico">
+      <Filter>cefsimple\res</Filter>
+    </None>
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\res\small.ico">
+      <Filter>cefsimple\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefsimple\cefsimple.rc">
+      <Filter>cefsimple</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cefsimple">
+      <UniqueIdentifier>{89066953-B50D-304F-AFBA-13D20FBD5DA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cefsimple\res">
+      <UniqueIdentifier>{6BEE0C20-2703-366D-8F26-F863C8B69B5F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -13,124 +13,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d8f8fdb-50df-47a4-ba54-f6e6bbf46bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/binding_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/binding_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/binding_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/binding_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/browser_window.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/browser_window.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/browser_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/browser_window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/bytes_write_handler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_app_delegates_browser.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_app_delegates_browser.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_browser.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_browser.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_browser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_browser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_osr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_handler_std.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/client_types.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/client_types.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/dialog_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/drm_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/drm_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/drm_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/drm_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/image_cache.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/image_cache.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/image_cache.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/image_cache.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/main_context_impl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_helper.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_accessibility_node.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_dragdrop_events.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_dragdrop_events.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/osr_renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/preferences_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/resource.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/resource.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/response_filter_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window_create.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window_create.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/root_window_manager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/scheme_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/server_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/server_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/server_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/server_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/temp_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/temp_window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/test_runner.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/test_runner.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/test_runner.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/test_runner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/urlrequest_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/browser/window_test_runner.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/common/client_app_delegates_common.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/common/client_app_delegates_common.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/common/scheme_test_common.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/client_app_delegates_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/client_app_delegates_renderer.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/client_renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_setup.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_setup.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_tests.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/renderer/performance_test_tests.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/binding.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/binding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/dialogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/draggable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/draggable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/drm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/drm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/extensions/set_page_color/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/localstorage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/localstorage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/other_tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/other_tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/performance.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/performance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/performance2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/performance2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/preferences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/response_filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/response_filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/server.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/server.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/transparency.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/transparency.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/urlrequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/urlrequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/websocket.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/websocket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/window.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/window.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefclient/resources/xmlhttprequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/resources/xmlhttprequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_app.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_app.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_app.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_app.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_handler.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_handler.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cefsimple/simple_handler.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/simple_handler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/client_app_browser.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/client_app_browser.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/client_app_browser.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/client_app_browser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/extension_util.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/extension_util.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/extension_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/extension_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/file_util.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/file_util.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/file_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/file_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/geometry_util.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/geometry_util.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/geometry_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/geometry_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_external_pump.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/main_message_loop_std.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/browser/resource_util.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/browser/resource_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app_other.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app_other.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/client_app_other.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_app_other.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/client_switches.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_switches.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/common/client_switches.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/common/client_switches.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/renderer/client_app_renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/resources/osr_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/resources/osr_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/resources/pdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/resources/pdf.html" afterDir="false" />
-    </list>
+    <list default="true" id="8d8f8fdb-50df-47a4-ba54-f6e6bbf46bf4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -290,11 +173,6 @@
               <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
               <item name="we-media" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
-              <item name="we-media" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -326,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.cefclient">
+  <component name="RunManager" selected="Application.cefsimple">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -390,12 +268,21 @@
       <workItem from="1536659529802" duration="374000" />
       <workItem from="1536718260615" duration="10086000" />
       <workItem from="1536805916705" duration="5377000" />
-      <workItem from="1536855033218" duration="1411000" />
+      <workItem from="1536855033218" duration="2020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105862000" />
+    <option name="totallyTimeSpent" value="106471000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -409,12 +296,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.329718" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.27874187" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

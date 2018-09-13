@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1CE76AAF-C94E-3DD7-A878-EB86E38DE7CB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cefclient</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\GAO\Documents\workspace\we-media\src\cefclient\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cefclient.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cefclient</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\GAO\Documents\workspace\we-media\src\cefclient\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cefclient.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cefclient</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\GAO\Documents\workspace\we-media;C:\Users\GAO\Documents\workspace\we-media\include;C:\Users\GAO\Documents\workspace\we-media\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\GAO\Documents\workspace\we-media;C:\Users\GAO\Documents\workspace\we-media\include;C:\Users\GAO\Documents\workspace\we-media\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\GAO\Documents\workspace\we-media;C:\Users\GAO\Documents\workspace\we-media\include;C:\Users\GAO\Documents\workspace\we-media\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...																	</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "C:/Users/GAO/Documents/workspace/we-media/src/cefclient/resources/win/cefclient.exe.manifest" "C:/Users/GAO/Documents/workspace/we-media/src/cefclient/resources/win/compatibility.manifest" -outputresource:"C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/cefclient.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/chrome_elf.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/chrome_elf.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/d3dcompiler_43.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/d3dcompiler_47.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/libcef.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/libEGL.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/libGLESv2.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/natives_blob.bin C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/snapshot_blob.bin C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/v8_context_snapshot.bin C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/v8_context_snapshot.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Debug/swiftshader C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/swiftshader
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef_100_percent.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef_200_percent.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef_extensions.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/devtools_resources.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/icudtl.dat C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/locales C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32\Debug\libcef.lib;..\..\libcef_dll_wrapper\Debug\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;glu32.lib;imm32.lib;opengl32.lib;oleacc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/cefclient.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Debug/cefclient.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\win\cefclient.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\GAO\Documents\workspace\we-media;C:\Users\GAO\Documents\workspace\we-media\include;C:\Users\GAO\Documents\workspace\we-media\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\GAO\Documents\workspace\we-media;C:\Users\GAO\Documents\workspace\we-media\include;C:\Users\GAO\Documents\workspace\we-media\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\GAO\Documents\workspace\we-media;C:\Users\GAO\Documents\workspace\we-media\include;C:\Users\GAO\Documents\workspace\we-media\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...																	</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "C:/Users/GAO/Documents/workspace/we-media/src/cefclient/resources/win/cefclient.exe.manifest" "C:/Users/GAO/Documents/workspace/we-media/src/cefclient/resources/win/compatibility.manifest" -outputresource:"C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/cefclient.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/chrome_elf.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/chrome_elf.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/d3dcompiler_43.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/d3dcompiler_47.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/libcef.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/libEGL.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/libGLESv2.dll C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/natives_blob.bin C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/snapshot_blob.bin C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/v8_context_snapshot.bin C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/v8_context_snapshot.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Release/swiftshader C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/swiftshader
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef_100_percent.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef_200_percent.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/cef_extensions.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/devtools_resources.pak C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_if_different C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/icudtl.dat C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy_directory C:/Users/GAO/Documents/workspace/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_windows32/Resources/locales C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_windows32\Release\libcef.lib;..\..\libcef_dll_wrapper\Release\libcef_dll_wrapper.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib;glu32.lib;imm32.lib;opengl32.lib;oleacc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/cefclient.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/GAO/Documents/workspace/we-media/src/cefclient/Release/cefclient.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\win\cefclient.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/GAO/Documents/workspace/we-media/src/cefclient/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/GAO/Documents/workspace/we-media -BC:/Users/GAO/Documents/workspace/we-media --check-stamp-file C:/Users/GAO/Documents/workspace/we-media/src/cefclient/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/GAO/Documents/workspace/we-media/src/cefclient/CMakeLists.txt;C:\Users\GAO\Documents\workspace\we-media\src\cefclient\CMakeLists.txt;C:\Users\GAO\Documents\workspace\we-media\src\cefclient\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\GAO\Documents\workspace\we-media\src\cefclient\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/GAO/Documents/workspace/we-media/src/cefclient/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -HC:/Users/GAO/Documents/workspace/we-media -BC:/Users/GAO/Documents/workspace/we-media --check-stamp-file C:/Users/GAO/Documents/workspace/we-media/src/cefclient/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/GAO/Documents/workspace/we-media/src/cefclient/CMakeLists.txt;C:\Users\GAO\Documents\workspace\we-media\src\cefclient\CMakeLists.txt;C:\Users\GAO\Documents\workspace\we-media\src\cefclient\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\GAO\Documents\workspace\we-media\src\cefclient\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\binding_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\binding_test.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\browser_window.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\browser_window.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\bytes_write_handler.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\bytes_write_handler.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_app_delegates_browser.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_browser.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_browser.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_handler.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_handler.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_handler_osr.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_handler_osr.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_handler_std.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_handler_std.h" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\client_types.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\dialog_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\dialog_test.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\drm_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\drm_test.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\image_cache.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\image_cache.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\main_context.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\main_context.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\main_context_impl.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\main_context_impl.h" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_dragdrop_events.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_renderer.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_renderer.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\preferences_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\preferences_test.h" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\resource.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\response_filter_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\response_filter_test.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window_create.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window_manager.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window_manager.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\scheme_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\scheme_test.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\server_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\server_test.h" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\temp_window.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\test_runner.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\test_runner.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\urlrequest_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\urlrequest_test.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test_runner.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test_runner.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\client_app_browser.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\client_app_browser.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\extension_util.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\extension_util.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\file_util.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\file_util.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\geometry_util.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\geometry_util.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\main_message_loop.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\main_message_loop.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\main_message_loop_external_pump.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\main_message_loop_external_pump.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\main_message_loop_std.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\main_message_loop_std.h" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\resource_util.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\common\client_app_delegates_common.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\common\scheme_test_common.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\common\scheme_test_common.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\common\client_app.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\common\client_app.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\common\client_app_other.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\common\client_app_other.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\common\client_switches.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\common\client_switches.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\renderer\client_app_delegates_renderer.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\renderer\client_renderer.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\renderer\client_renderer.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\renderer\performance_test.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\renderer\performance_test.h" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\renderer\performance_test_setup.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\renderer\performance_test_tests.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\renderer\client_app_renderer.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\renderer\client_app_renderer.h" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\binding.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\dialogs.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\draggable.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\drm.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\localstorage.html" />
+    <Image Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\logo.png" />
+    <Image Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\menu_icon.1x.png" />
+    <Image Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\menu_icon.2x.png" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\other_tests.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\performance.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\performance2.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\preferences.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\response_filter.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\server.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\transparency.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\urlrequest.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\websocket.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\window.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\xmlhttprequest.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\extensions\set_page_color\README.md" />
+    <Image Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\extensions\set_page_color\icon.png" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\extensions\set_page_color\manifest.json" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\extensions\set_page_color\popup.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\extensions\set_page_color\popup.js" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\resources\osr_test.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\resources\pdf.html" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\resources\pdf.pdf" />
+    <Image Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\resources\window_icon.1x.png" />
+    <Image Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\resources\window_icon.2x.png" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\cefclient_win.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\browser_window_osr_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\browser_window_osr_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\browser_window_std_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\browser_window_std_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\main_context_impl_win.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\main_message_loop_multithreaded_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\main_message_loop_multithreaded_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_accessibility_helper.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_accessibility_helper.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_accessibility_node.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_accessibility_node.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_accessibility_node_win.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_dragdrop_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_dragdrop_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_ime_handler_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_ime_handler_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_window_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\osr_window_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\resource_util_win_idmap.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window_views.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window_views.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\root_window_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\temp_window_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\temp_window_win.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\views_menu_bar.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\views_menu_bar.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\views_style.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\views_style.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\views_window.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\views_window.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test_runner_views.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test_runner_views.h" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test_runner_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\browser\window_test_runner_win.h" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\win\cefclient.ico" />
+    <ResourceCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\win\cefclient.rc" />
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\cefclient\resources\win\small.ico" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\main_message_loop_external_pump_win.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\resource_util_win.cc" />
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\util_win.cc" />
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\shared\browser\util_win.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\GAO\Documents\workspace\we-media\ZERO_CHECK.vcxproj">
+      <Project>{829484D0-0975-34E9-AF4C-2166C918A9D4}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\GAO\Documents\workspace\we-media\libcef_dll_wrapper\libcef_dll_wrapper.vcxproj">
+      <Project>{5BD09947-FBEB-3948-9144-40F37E3EDA96}</Project>
+      <Name>libcef_dll_wrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

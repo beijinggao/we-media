@@ -1,3 +1,14 @@
+.vs/
 .idea/
 cmake-build-debug/
 third_party/
+libcef_dll_wrapper/
+CMakeFiles/
+Win32/
+Debug/
+src/cefclient/Debug/
+src/cefclient/cefclient.dir/
+src/cefclient/CMakeFiles/
+src/cefsimple/Debug/
+src/cefsimple/CMakeFiles/
+src/cefsimple/cefsimple.dir/
