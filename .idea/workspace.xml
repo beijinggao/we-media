@@ -14,14 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8f8fdb-50df-47a4-ba54-f6e6bbf46bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/core/request_client.cpp" afterPath="$PROJECT_DIR$/src/core/common/request_client.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/core/request_client.h" afterPath="$PROJECT_DIR$/src/core/common/request_client.h" />
-      <change beforePath="$PROJECT_DIR$/src/core/request_url.cpp" afterPath="$PROJECT_DIR$/src/core/common/request_url.cpp" />
-      <change beforePath="$PROJECT_DIR$/src/core/request_url.h" afterPath="$PROJECT_DIR$/src/core/common/request_url.h" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/core/common/main.cpp" />
-      <change beforePath="$PROJECT_DIR$/we_media.xcodeproj/project.xcworkspace/xcuserdata/gaodong.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/we_media.xcodeproj/project.xcworkspace/xcuserdata/gaodong.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change beforePath="$PROJECT_DIR$/src/core/CMakeLists.txt" afterPath="$PROJECT_DIR$/src/core/CMakeLists.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -106,36 +100,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="1904">
+              <caret line="112" column="19" lean-forward="true" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cefclient_mac.mm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cefclient/cefclient_mac.mm">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cefclient/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-              <folding>
-                <element signature="e#242#265#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cefsimple_mac.mm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cefsimple/cefsimple_mac.mm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="132" column="56" lean-forward="true" selection-start-line="132" selection-start-column="56" selection-end-line="132" selection-end-column="56" />
-              <folding>
-                <element signature="e#242#265#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="8959">
+              <caret line="527" column="30" lean-forward="true" selection-start-line="527" selection-start-column="30" selection-end-line="527" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -335,12 +315,12 @@
       <workItem from="1536718260615" duration="10086000" />
       <workItem from="1536805916705" duration="5377000" />
       <workItem from="1536855033218" duration="2020000" />
-      <workItem from="1536897394002" duration="3558000" />
+      <workItem from="1536897394002" duration="5572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110029000" />
+    <option name="totallyTimeSpent" value="112043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -634,14 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cefclient/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2702">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/common/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -652,11 +624,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/cefsimple/cefsimple_mac.mm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="175">
+          <caret line="132" column="56" lean-forward="true" selection-start-line="132" selection-start-column="56" selection-end-line="132" selection-end-column="56" />
+          <folding>
+            <element signature="e#242#265#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,13 +644,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cefsimple/cefsimple_mac.mm">
+    <entry file="file://$PROJECT_DIR$/src/cefclient/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="132" column="56" lean-forward="true" selection-start-line="132" selection-start-column="56" selection-end-line="132" selection-end-column="56" />
-          <folding>
-            <element signature="e#242#265#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="8959">
+          <caret line="527" column="30" lean-forward="true" selection-start-line="527" selection-start-column="30" selection-end-line="527" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="19" lean-forward="true" selection-start-line="112" selection-start-column="19" selection-end-line="112" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
