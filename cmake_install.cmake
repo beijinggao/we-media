@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/GAO/Documents/workspace/we-media
+# Install script for directory: /Users/gaodong/Documents/mobile/we-media
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/we_media")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/GAO/Documents/workspace/we-media/libcef_dll_wrapper/cmake_install.cmake")
-  include("C:/Users/GAO/Documents/workspace/we-media/src/cefclient/cmake_install.cmake")
-  include("C:/Users/GAO/Documents/workspace/we-media/src/cefsimple/cmake_install.cmake")
+  include("/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/cmake_install.cmake")
+  include("/Users/gaodong/Documents/mobile/we-media/src/cefclient/cmake_install.cmake")
+  include("/Users/gaodong/Documents/mobile/we-media/src/cefsimple/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/GAO/Documents/workspace/we-media/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/gaodong/Documents/mobile/we-media/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
