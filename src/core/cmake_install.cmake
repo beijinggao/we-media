@@ -1,4 +1,4 @@
-# Install script for directory: /Users/gao/work/todo/we-media/src/cefsimple
+# Install script for directory: /Users/gao/work/todo/we-media/src/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

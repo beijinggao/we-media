@@ -9,15 +9,15 @@ all: \
 
 
 cefsimple_buildpart_0: 
-	/usr/local/Cellar/cmake/3.12.1/bin/cmake -E copy_directory "/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple Helper.app" "/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Frameworks/cefsimple Helper.app"
-	/usr/local/Cellar/cmake/3.12.1/bin/cmake -E copy_directory "/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/Debug/Chromium Embedded Framework.framework" "/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Frameworks/Chromium Embedded Framework.framework"
+	/usr/local/bin/cmake -E copy_directory "/Users/gao/work/todo/we-media/src/cefsimple/Debug/cefsimple Helper.app" "/Users/gao/work/todo/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Frameworks/cefsimple Helper.app"
+	/usr/local/bin/cmake -E copy_directory "/Users/gao/work/todo/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/Debug/Chromium Embedded Framework.framework" "/Users/gao/work/todo/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Frameworks/Chromium Embedded Framework.framework"
 
 cefsimple_buildpart_1: 
-	/usr/local/Cellar/cmake/3.12.1/bin/cmake -E copy /Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/cefsimple.icns /Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/cefsimple.icns
+	/usr/local/bin/cmake -E copy /Users/gao/work/todo/we-media/src/cefsimple/mac/cefsimple.icns /Users/gao/work/todo/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/cefsimple.icns
 
 cefsimple_buildpart_2: 
-	/usr/local/Cellar/cmake/3.12.1/bin/cmake -E copy /Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/English.lproj/InfoPlist.strings /Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/English.lproj/InfoPlist.strings
+	/usr/local/bin/cmake -E copy /Users/gao/work/todo/we-media/src/cefsimple/mac/English.lproj/InfoPlist.strings /Users/gao/work/todo/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/English.lproj/InfoPlist.strings
 
 cefsimple_buildpart_3: 
-	/usr/local/Cellar/cmake/3.12.1/bin/cmake -E make_directory /Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/English.lproj
-	/usr/bin/ibtool --output-format binary1 --compile /Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/English.lproj/MainMenu.nib /Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/English.lproj/MainMenu.xib
+	/usr/local/bin/cmake -E make_directory /Users/gao/work/todo/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/English.lproj
+	/usr/bin/ibtool --output-format binary1 --compile /Users/gao/work/todo/we-media/src/cefsimple/Debug/cefsimple.app/Contents/Resources/English.lproj/MainMenu.nib /Users/gao/work/todo/we-media/src/cefsimple/mac/English.lproj/MainMenu.xib

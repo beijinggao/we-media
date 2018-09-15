@@ -11,7 +11,9 @@ we_media.build/
 src/cefclient/Debug/
 src/cefclient/cefclient.dir/
 src/cefclient/CMakeFiles/
+src/cefclient/CMakeScripts/
 src/cefsimple/Debug/
 src/cefsimple/CMakeFiles/
+src/cefsimple/CMakeScripts/
 src/cefsimple/cefsimple.dir/
 CMakeCache.txt

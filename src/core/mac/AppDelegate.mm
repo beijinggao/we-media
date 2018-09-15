@@ -47,3 +47,4 @@ const CGFloat kTitlebarHeightAtDefaultScale = 50;
 }
 
 @end
+
