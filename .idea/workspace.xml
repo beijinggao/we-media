@@ -224,10 +224,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="766" />
-    <option name="y" value="26" />
-    <option name="width" value="1920" />
-    <option name="height" value="977" />
+    <option name="x" value="779" />
+    <option name="y" value="45" />
+    <option name="width" value="1440" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -298,51 +298,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.we-media">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cefsimple" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cefclient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefclient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cefclient_Helper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefclient_Helper" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefclient_Helper">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cefsimple" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefsimple" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cefsimple_Helper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefsimple_Helper" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple_Helper">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="libcef_dll_wrapper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="libcef_dll_wrapper" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="we-media" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="we-media" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="we-media">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.cefclient" />
-      <item itemvalue="Application.cefsimple" />
-      <item itemvalue="Application.libcef_dll_wrapper" />
-      <item itemvalue="Application.cefclient_Helper" />
-      <item itemvalue="Application.cefsimple_Helper" />
-      <item itemvalue="Application.we-media" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
