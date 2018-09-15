@@ -122,3 +122,4 @@ PRINT_CEF_CONFIG()
 # Example executable targets.
 add_subdirectory(src/cefclient)
 add_subdirectory(src/cefsimple)
+add_subdirectory(src/core)
