@@ -12,8 +12,13 @@ src/cefclient/Debug/
 src/cefclient/cefclient.dir/
 src/cefclient/CMakeFiles/
 src/cefclient/CMakeScripts/
+src/cefclient/we_media.build/
 src/cefsimple/Debug/
 src/cefsimple/CMakeFiles/
 src/cefsimple/CMakeScripts/
 src/cefsimple/cefsimple.dir/
+src/cefsimple/we_media.build/
 CMakeCache.txt
+cmake_install.cmake
+we_media.xcodeproj
+we_media.build
