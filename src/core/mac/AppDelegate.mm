@@ -9,7 +9,7 @@
 
 #define USE_BLURRY_BACKGROUND 0
 
-static NSString* kDefaultWindowTitle = @"WeMedia";
+//static NSString* kDefaultWindowTitle = @"WeMedia";
 
 
 

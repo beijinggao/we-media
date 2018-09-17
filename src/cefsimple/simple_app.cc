@@ -82,7 +82,7 @@ void SimpleApp::OnContextInitialized() {
   // that instead of the default URL.
   url = command_line->GetSwitchValue("url");
   if (url.empty())
-    url = "http://www.google.com";
+    url = "https://www.messenger.com/login";
 
   if (use_views) {
     // Create the BrowserView.

@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="we_media"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\third_party\;CMake Files\third_party\cef\;CMake Files\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_macosx64\;CMake Files\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_macosx64\cmake\;CMake Files\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_macosx64\libcef_dll\;CMake Files\src\;CMake Files\src\cefclient\;CMake Files\src\cefclient\resources\;CMake Files\src\cefclient\resources\mac\;CMake Files\src\cefsimple\;CMake Files\src\cefsimple\mac\;CMake Files\src\core\;CMake Files\src\core\mac\;CMake Files\src\core\mac\res\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcef_dll_wrapper">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/libcef_dll_wrapper.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DWRAPPING_CEF_SHARED"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 libcef_dll_wrapper"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcef_dll_wrapper/fast">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/libcef_dll_wrapper.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DWRAPPING_CEF_SHARED"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 libcef_dll_wrapper/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefclient">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug/cefclient.app/Contents/MacOS/cefclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 cefclient"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefclient/fast">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug/cefclient.app/Contents/MacOS/cefclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 cefclient/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefclient_Helper">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug/cefclient Helper.app/Contents/MacOS/cefclient Helper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 cefclient_Helper"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefclient_Helper/fast">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug/cefclient Helper.app/Contents/MacOS/cefclient Helper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefclient/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 cefclient_Helper/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefsimple">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/MacOS/cefsimple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 cefsimple"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefsimple/fast">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple.app/Contents/MacOS/cefsimple" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 cefsimple/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefsimple_Helper">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple Helper.app/Contents/MacOS/cefsimple Helper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 cefsimple_Helper"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cefsimple_Helper/fast">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug/cefsimple Helper.app/Contents/MacOS/cefsimple Helper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 cefsimple_Helper/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/cefsimple/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="we-media">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/core/Debug/we-media.app/Contents/MacOS/we-media" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/core/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 we-media"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="we-media/fast">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/core/Debug/we-media.app/Contents/MacOS/we-media" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/core/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 we-media/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/binding_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/binding_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/browser_window.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/browser_window.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/browser_window_osr_mac.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/browser_window_osr_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/browser_window_std_mac.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/browser_window_std_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/bytes_write_handler.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/bytes_write_handler.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_app_delegates_browser.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_browser.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_browser.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_handler.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_handler.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_handler_osr.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_handler_osr.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_handler_std.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_handler_std.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/client_types.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/dialog_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/dialog_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/drm_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/drm_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/image_cache.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/image_cache.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/main_context.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/main_context.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/main_context_impl.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/main_context_impl.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/main_context_impl_posix.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_accessibility_helper.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_accessibility_helper.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_accessibility_node.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_accessibility_node.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_accessibility_node_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_dragdrop_events.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_renderer.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/osr_renderer.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/preferences_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/preferences_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/resource.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/response_filter_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/response_filter_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/root_window.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/root_window.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/root_window_create.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/root_window_mac.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/root_window_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/root_window_manager.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/root_window_manager.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/scheme_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/scheme_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/server_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/server_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/temp_window.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/temp_window_mac.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/temp_window_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/test_runner.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/test_runner.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/text_input_client_osr_mac.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/text_input_client_osr_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/urlrequest_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/urlrequest_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/window_test.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/window_test.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/window_test_runner.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/window_test_runner.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/window_test_runner_mac.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/window_test_runner_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/cefclient_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/common/client_app_delegates_common.cc">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/common/scheme_test_common.cc">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/common/scheme_test_common.h">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/renderer/client_app_delegates_renderer.cc">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/renderer/client_renderer.cc">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/renderer/client_renderer.h">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/renderer/performance_test.cc">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/renderer/performance_test.h">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/renderer/performance_test_setup.h">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/renderer/performance_test_tests.cc">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/binding.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/dialogs.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/draggable.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/drm.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/extensions/set_page_color/README.md">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/extensions/set_page_color/icon.png">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/extensions/set_page_color/manifest.json">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/extensions/set_page_color/popup.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/extensions/set_page_color/popup.js">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/localstorage.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/logo.png">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/mac/English.lproj/InfoPlist.strings">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/mac/English.lproj/MainMenu.xib">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/mac/Info.plist">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/mac/cefclient.icns">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/menu_icon.1x.png">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/menu_icon.2x.png">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/other_tests.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/performance.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/performance2.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/preferences.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/response_filter.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/server.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/transparency.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/urlrequest.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/websocket.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/window.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/xmlhttprequest.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/cefsimple_mac.mm">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/English.lproj/InfoPlist.strings">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/English.lproj/MainMenu.xib">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/Info.plist">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/cefsimple.icns">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/process_helper_mac.cc">
+			<Option target="cefsimple_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/simple_app.cc">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/simple_app.h">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/simple_handler.cc">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/simple_handler.h">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/simple_handler_mac.mm">
+			<Option target="cefsimple"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/Mac/WMWindow.h">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/Mac/WMWindow.mm">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/AppDelegate.h">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/AppDelegate.mm">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/WMWindow.h">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/main_mac.mm">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/client_app_browser.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/client_app_browser.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/extension_util.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/extension_util.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/file_util.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/file_util.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/geometry_util.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/geometry_util.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/main_message_loop.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/main_message_loop.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/main_message_loop_external_pump.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/main_message_loop_external_pump.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/main_message_loop_external_pump_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/main_message_loop_std.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/main_message_loop_std.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/resource_util.h">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/resource_util_mac.mm">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/browser/resource_util_posix.cc">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/common/client_app.cc">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/common/client_app.h">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/common/client_app_other.cc">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/common/client_app_other.h">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/common/client_switches.cc">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/common/client_switches.h">
+			<Option target="cefclient"/>
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/process_helper_mac.cc">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/renderer/client_app_renderer.cc">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/renderer/client_app_renderer.h">
+			<Option target="cefclient_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/resources/osr_test.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/resources/pdf.html">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/resources/pdf.pdf">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/resources/window_icon.1x.png">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/shared/resources/window_icon.2x.png">
+			<Option target="cefclient"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_atomic_ref_count.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_atomicops.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_basictypes.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_bind.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_bind_helpers.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_build.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_callback.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_callback_forward.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_callback_helpers.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_callback_list.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_cancelable_callback.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_lock.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_logging.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_macros.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_move.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_platform_thread.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_ref_counted.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_scoped_ptr.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_string16.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_template_util.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_thread_checker.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_trace_event.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_tuple.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/cef_weak_ptr.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/internal/cef_atomicops_atomicword_compat.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/internal/cef_atomicops_mac.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/internal/cef_bind_internal.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/internal/cef_callback_internal.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/internal/cef_lock_impl.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/internal/cef_raw_scoped_refptr_mismatch_checker.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/base/internal/cef_thread_checker_impl.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_accessibility_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_app_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_auth_callback_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_base_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_browser_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_browser_process_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_callback_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_client_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_command_line_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_context_menu_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_cookie_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_crash_util_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_dialog_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_display_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_dom_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_download_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_download_item_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_drag_data_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_drag_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_extension_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_extension_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_file_util_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_find_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_focus_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_frame_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_image_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_jsdialog_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_keyboard_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_life_span_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_load_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_menu_model_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_menu_model_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_navigation_entry_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_origin_whitelist_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_parser_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_path_util_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_print_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_print_settings_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_process_message_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_process_util_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_render_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_render_process_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_request_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_request_context_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_request_context_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_request_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_resource_bundle_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_resource_bundle_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_resource_handler_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_response_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_response_filter_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_scheme_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_server_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_ssl_info_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_ssl_status_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_stream_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_string_visitor_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_task_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_thread_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_trace_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_urlrequest_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_v8_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_values_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_waitable_event_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_web_plugin_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_x509_certificate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_xml_reader_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/cef_zip_reader_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/test/cef_test_helpers_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/test/cef_translator_test_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_box_layout_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_browser_view_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_browser_view_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_button_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_button_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_display_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_fill_layout_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_label_button_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_layout_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_menu_button_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_menu_button_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_panel_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_panel_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_scroll_view_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_textfield_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_textfield_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_view_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_view_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_window_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/capi/views/cef_window_delegate_capi.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_accessibility_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_app.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_application_mac.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_auth_callback.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_base.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_browser.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_browser_process_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_callback.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_client.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_command_line.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_context_menu_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_cookie.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_crash_util.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_dialog_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_display_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_dom.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_download_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_download_item.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_drag_data.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_drag_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_extension.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_extension_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_file_util.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_find_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_focus_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_frame.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_image.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_jsdialog_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_keyboard_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_life_span_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_load_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_menu_model.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_menu_model_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_navigation_entry.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_origin_whitelist.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_parser.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_path_util.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_print_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_print_settings.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_process_message.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_process_util.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_render_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_render_process_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_request.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_request_context.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_request_context_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_request_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_resource_bundle.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_resource_bundle_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_resource_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_response.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_response_filter.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_scheme.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_server.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_ssl_info.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_ssl_status.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_stream.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_string_visitor.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_task.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_thread.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_trace.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_urlrequest.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_v8.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_values.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_version.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_waitable_event.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_web_plugin.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_x509_certificate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_xml_reader.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/cef_zip_reader.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_export.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_logging_internal.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_mac.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_ptr.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_string.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_string_list.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_string_map.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_string_multimap.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_string_types.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_string_wrappers.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_thread_internal.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_time.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_trace_event_internal.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_types.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_types_mac.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/internal/cef_types_wrappers.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/test/cef_test_helpers.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/test/cef_translator_test.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_box_layout.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_browser_view.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_browser_view_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_button.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_button_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_display.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_fill_layout.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_label_button.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_layout.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_menu_button.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_menu_button_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_panel.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_panel_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_scroll_view.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_textfield.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_textfield_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_view.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_view_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_window.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/views/cef_window_delegate.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_byte_read_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_closure_task.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_helpers.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_message_router.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_resource_manager.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_scoped_temp_dir.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_stream_resource_handler.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_xml_object.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/include/wrapper/cef_zip_archive.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_atomicops_x86_gcc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_bind_helpers.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_callback_helpers.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_callback_internal.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_lock.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_lock_impl.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_logging.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_ref_counted.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_string16.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_thread_checker_impl.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/base/cef_weak_ptr.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/accessibility_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/accessibility_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/app_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/app_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/base_ref_counted_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/base_ref_counted_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/base_scoped_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/base_scoped_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/browser_process_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/browser_process_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/client_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/client_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/completion_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/completion_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/context_menu_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/context_menu_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/cookie_visitor_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/cookie_visitor_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/cpptoc_ref_counted.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/cpptoc_scoped.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/delete_cookies_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/delete_cookies_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/dialog_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/dialog_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/display_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/display_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/domvisitor_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/domvisitor_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/download_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/download_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/download_image_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/download_image_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/drag_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/drag_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/end_tracing_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/end_tracing_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/extension_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/extension_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/find_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/find_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/focus_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/focus_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/jsdialog_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/jsdialog_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/keyboard_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/keyboard_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/life_span_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/life_span_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/load_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/load_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/menu_model_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/menu_model_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/navigation_entry_visitor_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/navigation_entry_visitor_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/pdf_print_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/pdf_print_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/print_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/print_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/read_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/read_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/register_cdm_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/register_cdm_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/render_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/render_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/render_process_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/render_process_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/request_context_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/request_context_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/request_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/request_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/resolve_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/resolve_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/resource_bundle_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/resource_bundle_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/resource_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/resource_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/response_filter_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/response_filter_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/run_file_dialog_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/run_file_dialog_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/scheme_handler_factory_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/scheme_handler_factory_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/server_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/server_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/set_cookie_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/set_cookie_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/string_visitor_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/string_visitor_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/task_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/task_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_ref_ptr_client_child_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_ref_ptr_client_child_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_ref_ptr_client_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_ref_ptr_client_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_scoped_client_child_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_scoped_client_child_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_scoped_client_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/test/translator_test_scoped_client_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/urlrequest_client_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/urlrequest_client_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8accessor_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8accessor_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8array_buffer_release_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8array_buffer_release_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8interceptor_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/v8interceptor_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/browser_view_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/browser_view_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/button_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/button_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/menu_button_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/menu_button_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/panel_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/panel_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/textfield_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/textfield_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/view_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/view_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/window_delegate_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/views/window_delegate_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/web_plugin_info_visitor_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/web_plugin_info_visitor_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/web_plugin_unstable_callback_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/web_plugin_unstable_callback_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/write_handler_cpptoc.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/cpptoc/write_handler_cpptoc.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/auth_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/auth_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/before_download_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/before_download_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/binary_value_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/binary_value_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/browser_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/browser_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/browser_host_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/browser_host_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/command_line_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/command_line_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/context_menu_params_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/context_menu_params_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/cookie_manager_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/cookie_manager_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/ctocpp_ref_counted.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/ctocpp_scoped.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/dictionary_value_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/dictionary_value_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/domdocument_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/domdocument_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/domnode_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/domnode_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/download_item_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/download_item_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/download_item_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/download_item_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/drag_data_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/drag_data_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/extension_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/extension_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/file_dialog_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/file_dialog_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/frame_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/frame_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/get_extension_resource_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/get_extension_resource_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/image_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/image_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/jsdialog_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/jsdialog_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/list_value_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/list_value_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/menu_model_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/menu_model_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/navigation_entry_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/navigation_entry_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/post_data_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/post_data_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/post_data_element_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/post_data_element_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/print_dialog_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/print_dialog_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/print_job_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/print_job_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/print_settings_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/print_settings_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/process_message_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/process_message_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/request_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/request_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/request_context_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/request_context_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/request_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/request_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/resource_bundle_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/resource_bundle_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/response_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/response_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/run_context_menu_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/run_context_menu_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/scheme_registrar_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/scheme_registrar_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/select_client_certificate_callback_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/select_client_certificate_callback_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/server_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/server_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/sslinfo_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/sslinfo_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/sslstatus_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/sslstatus_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/stream_reader_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/stream_reader_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/stream_writer_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/stream_writer_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/task_runner_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/task_runner_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ref_ptr_library_child_child_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ref_ptr_library_child_child_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ref_ptr_library_child_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ref_ptr_library_child_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ref_ptr_library_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_ref_ptr_library_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_scoped_library_child_child_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_scoped_library_child_child_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_scoped_library_child_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_scoped_library_child_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_scoped_library_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/test/translator_test_scoped_library_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/thread_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/thread_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/urlrequest_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/urlrequest_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8context_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8context_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8exception_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8exception_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8stack_frame_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8stack_frame_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8stack_trace_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8stack_trace_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8value_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/v8value_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/value_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/value_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/box_layout_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/box_layout_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/browser_view_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/browser_view_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/button_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/button_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/display_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/display_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/fill_layout_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/fill_layout_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/label_button_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/label_button_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/layout_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/layout_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/menu_button_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/menu_button_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/menu_button_pressed_lock_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/menu_button_pressed_lock_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/panel_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/panel_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/scroll_view_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/scroll_view_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/textfield_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/textfield_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/view_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/view_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/window_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/views/window_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/waitable_event_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/waitable_event_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/web_plugin_info_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/web_plugin_info_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/x509cert_principal_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/x509cert_principal_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/x509certificate_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/x509certificate_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/xml_reader_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/xml_reader_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/zip_reader_ctocpp.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ctocpp/zip_reader_ctocpp.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/ptr_util.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/transfer_util.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/transfer_util.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_browser_info_map.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_byte_read_handler.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_closure_task.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_message_router.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_resource_manager.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_scoped_temp_dir.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_stream_resource_handler.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_xml_object.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/cef_zip_archive.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/libcef_dll_wrapper.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper/libcef_dll_wrapper2.cc">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/wrapper_types.h">
+			<Option target="libcef_dll_wrapper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/cmake/DownloadCEF.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/cmake/FindCEF.cmake">
+			<Option virtualFolder="CMake Files\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_macosx64\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/cmake/cef_variables.cmake">
+			<Option virtualFolder="CMake Files\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_macosx64\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/cmake/cef_macros.cmake">
+			<Option virtualFolder="CMake Files\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_macosx64\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/libcef_dll/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\third_party\cef\cef_binary_3.3497.1827.ga4f7e36_macosx64\libcef_dll\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cefclient\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/mac/Info.plist">
+			<Option virtualFolder="CMake Files\src\cefclient\resources\mac\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/resources/mac/helper-Info.plist">
+			<Option virtualFolder="CMake Files\src\cefclient\resources\mac\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\cefsimple\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/Info.plist">
+			<Option virtualFolder="CMake Files\src\cefsimple\mac\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/mac/helper-Info.plist">
+			<Option virtualFolder="CMake Files\src\cefsimple\mac\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\core\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/res/Info.plist">
+			<Option virtualFolder="CMake Files\src\core\mac\res\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

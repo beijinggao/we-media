@@ -4,9 +4,13 @@
 
 //#ifndef WE_MEDIA_WMWINDOW_H
 //#define WE_MEDIA_WMWINDOW_H
+#import <Cocoa/Cocoa.h>
+#import <AppKit/AppKit.h>
+
 
 
 @interface WMWindow : NSWindow <NSWindowDelegate>
+
 
 @property (nonatomic) CGFloat titlebarHeight;
 
@@ -18,6 +22,7 @@
 - (void)hideTitlebarAnimate:(BOOL)animate;
 
 - (void)updateWindowTitlebar;
+
 
 @end
 

@@ -19,6 +19,17 @@ set(WE_MEDIA_MACOSX_SRCS
 
 source_group(core FILES ${WE_MEDIA_MACOSX_SRCS})
 
+# cefsimple resources.
+set(WE_MEDIA_RESOURCES_MAC_SRCS_MACOSX
+        mac/res/Info.plist
+        )
+APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_MAC_SRCS)
+source_group(core\\\\mac\\\\res FILES ${WE_MEDIA_RESOURCES_MAC_SRCS})
+
+set(WE_MEDIA_RESOURCES_SRCS
+        ${WE_MEDIA_RESOURCES_MAC_SRCS}
+        )
+
 # Target executable names.
 set(WEMEDIA_TARGET "we-media")
 
@@ -51,9 +62,9 @@ if(OS_MACOSX)
     SET_EXECUTABLE_TARGET_PROPERTIES(${WEMEDIA_TARGET})
     add_dependencies(${WEMEDIA_TARGET} libcef_dll_wrapper)
     target_link_libraries(${WEMEDIA_TARGET} libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS} "-framework OpenGL")
-    #set_target_properties(${WEMEDIA_TARGET} PROPERTIES
-     #       MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/resources/mac/Info.plist
-     #       )
+    set_target_properties(${WEMEDIA_TARGET} PROPERTIES
+            MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/mac/res/Info.plist
+            )
 
     # Copy files into the main app bundle.
     add_custom_command(
@@ -73,12 +84,8 @@ if(OS_MACOSX)
     # The Xcode generator can support this via the set_target_properties RESOURCE
     # directive but that doesn't properly handle nested resource directories.
     # Remove these prefixes from input file paths.
-    #set(PREFIXES
-    #        "resources/mac/"
-    #        "resources/"
-    #        "../shared/resources/"
-    #        )
-    #COPY_MACOSX_RESOURCES("${CEFCLIENT_RESOURCES_SRCS}" "${PREFIXES}" "${CEF_TARGET}" "${CMAKE_CURRENT_SOURCE_DIR}" "${CEF_APP}")
+    set(PREFIXES "mac/res/")
+    COPY_MACOSX_RESOURCES("${WE_MEDIA_RESOURCES_SRCS}" "${PREFIXES}" "${WEMEDIA_TARGET}" "${CMAKE_CURRENT_SOURCE_DIR}" "${WEMEDIA_APP}")
 endif()
 
 
