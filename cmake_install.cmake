@@ -1,4 +1,4 @@
-# Install script for directory: /Users/gaodong/Documents/mobile/we-media
+# Install script for directory: /Users/gao/work/todo/we-media
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,17 +27,12 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/gaodong/Documents/mobile/we-media/libcef_dll_wrapper/cmake_install.cmake")
-  include("/Users/gaodong/Documents/mobile/we-media/src/cefclient/cmake_install.cmake")
-  include("/Users/gaodong/Documents/mobile/we-media/src/cefsimple/cmake_install.cmake")
-  include("/Users/gaodong/Documents/mobile/we-media/src/core/cmake_install.cmake")
+  include("/Users/gao/work/todo/we-media/libcef_dll_wrapper/cmake_install.cmake")
+  include("/Users/gao/work/todo/we-media/src/cefclient/cmake_install.cmake")
+  include("/Users/gao/work/todo/we-media/src/cefsimple/cmake_install.cmake")
+  include("/Users/gao/work/todo/we-media/src/core/cmake_install.cmake")
 
 endif()
 
@@ -49,5 +44,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/gaodong/Documents/mobile/we-media/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/gao/work/todo/we-media/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

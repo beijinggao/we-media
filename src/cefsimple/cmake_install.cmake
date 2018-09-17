@@ -1,4 +1,4 @@
-# Install script for directory: /Users/gaodong/Documents/mobile/we-media/src/cefsimple
+# Install script for directory: /Users/gao/work/todo/we-media/src/cefsimple
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -25,10 +25,5 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   else()
     set(CMAKE_INSTALL_COMPONENT)
   endif()
-endif()
-
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 

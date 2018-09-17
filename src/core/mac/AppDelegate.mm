@@ -3,48 +3,30 @@
 //
 
 #import "AppDelegate.h"
-#import "WMWindow.h"
 
 
+@implementation AppDelegate
 
-#define USE_BLURRY_BACKGROUND 0
+// Create the application on the UI thread.
+- (void)createApplication:(id)object {
+    [NSApplication sharedApplication];
+    [[NSBundle mainBundle] loadNibNamed:@"MainMenu"
+                                  owner:NSApp
+                        topLevelObjects:nil];
 
-//static NSString* kDefaultWindowTitle = @"WeMedia";
-
-
-
-
-
-
-@interface AppDelegate ()
-
-/*@property (nonatomic, readonly) BOOL canMakeTextLarger;
-- (IBAction)makeTextLarger:(id)sender;
-@property (nonatomic, readonly) BOOL canMakeTextSmaller;
-- (IBAction)makeTextSmaller:(id)sender;
-@property (nonatomic, readonly) BOOL canMakeTextStandardSize;
-- (IBAction)makeTextStandardSize:(id)sender;
-- (void)updateNetReach:(SCNetworkConnectionFlags)flags;*/
-
-@end
-
-@implementation AppDelegate{
-    WMWindow*           _window;
+    // Set the delegate for application events.
+    [[NSApplication sharedApplication] setDelegate:self];
 }
 
-const CGFloat kTitlebarHeightAtDefaultScale = 50;
-
-- (void)applicationDidFinishLaunching:(NSNotification*)notification {
-    [NSUserNotificationCenter defaultUserNotificationCenter].delegate = self;
-    // Create main window
-    _window = [[WMWindow alloc] initWithTitlebarHeight:kTitlebarHeightAtDefaultScale];
-
-
+- (void)tryToTerminateApplication:(NSApplication*)app {
+    SimpleHandler* handler = SimpleHandler::GetInstance();
+    if (handler && !handler->IsClosing())
+        handler->CloseAllBrowsers(false);
 }
 
-- (NSWindow*)mainWindow {
-    return _window;
+- (NSApplicationTerminateReply)applicationShouldTerminate:
+        (NSApplication*)sender {
+    return NSTerminateNow;
 }
-
 @end
 

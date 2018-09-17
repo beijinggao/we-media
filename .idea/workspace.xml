@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
-    <generated />
+    <generated>
+      <config projectName="we_media" targetName="cefsimple" />
+      <config projectName="we_media" targetName="cefclient_Helper" />
+      <config projectName="we_media" targetName="cefclient" />
+      <config projectName="we_media" targetName="we-media" />
+      <config projectName="we_media" targetName="libcef_dll_wrapper" />
+      <config projectName="we_media" targetName="cefsimple_Helper" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -10,8 +17,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d8f8fdb-50df-47a4-ba54-f6e6bbf46bf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/mac/Application.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/mac/Application.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/mac/SimpleApp.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/mac/SimpleApp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefclient/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefclient/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cefsimple/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/cefsimple/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/mac/AppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/mac/AppDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/mac/AppDelegate.mm" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/mac/AppDelegate.mm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/mac/WMWindow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/mac/WMWindow.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/main_mac.mm" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/main_mac.mm" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -24,12 +44,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="1339206427">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="11" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.168" value="1" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.25" value="1" />
@@ -39,7 +60,7 @@
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.87" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -50,27 +71,27 @@
           <entry key="bin" value="1" />
           <entry key="c" value="1" />
           <entry key="cbp" value="1" />
-          <entry key="cc" value="2" />
+          <entry key="cc" value="5" />
           <entry key="check_cache" value="1" />
           <entry key="cmake" value="5" />
-          <entry key="cpp" value="2" />
+          <entry key="cpp" value="3" />
           <entry key="cxx" value="1" />
           <entry key="dgph" value="2" />
           <entry key="gitignore" value="3" />
           <entry key="gitingore" value="1" />
-          <entry key="h" value="10" />
+          <entry key="h" value="17" />
           <entry key="log" value="1" />
-          <entry key="m" value="1" />
+          <entry key="m" value="2" />
           <entry key="make" value="4" />
           <entry key="makeDebug" value="3" />
           <entry key="makeRelease" value="3" />
           <entry key="manifest" value="1" />
           <entry key="md" value="4" />
-          <entry key="mm" value="9" />
+          <entry key="mm" value="15" />
           <entry key="pbxproj" value="1" />
           <entry key="plist" value="6" />
           <entry key="sh" value="3" />
-          <entry key="txt" value="21" />
+          <entry key="txt" value="22" />
           <entry key="vcxproj" value="1" />
           <entry key="xcsettings" value="1" />
           <entry key="xcworkspacedata" value="1" />
@@ -79,24 +100,26 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeCache.txt" value="1" />
-          <entry key="CMakeLists.txt" value="24" />
-          <entry key="ObjectiveC" value="26" />
+          <entry key="CMakeLists.txt" value="25" />
+          <entry key="ObjectiveC" value="44" />
           <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cpp" value="1" />
           <entry key="gitignore" value="9" />
-          <entry key="h" value="39" />
+          <entry key="h" value="47" />
+          <entry key="m" value="7" />
           <entry key="md" value="17" />
-          <entry key="mm" value="45" />
+          <entry key="mm" value="99" />
           <entry key="txt" value="206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="206" />
-          <entry key="ObjectiveC" value="84" />
+          <entry key="ObjectiveC" value="154" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
@@ -128,19 +151,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cefsimple/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/src/core/mac/AppDelegate.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="90">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cefsimple/cefsimple_mac.mm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#242#265#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/src/core/mac/AppDelegate.mm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="60">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/mac/Application.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cefsimple/simple_app.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="2" selection-start-line="7" selection-end-line="26" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/mac/SimpleApp.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-822">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding>
+                <element signature="e#1429#1743#0" expanded="true" />
+                <element signature="e#2684#2825#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/mac/SimpleApp.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cefsimple/simple_app.cc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding>
+                <element signature="e#189#228#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,6 +253,10 @@
       <find>ZERO</find>
       <find>mobile</find>
       <find>CMAKE_SUPPRESS_REGENERATION</find>
+      <find>createApplication</find>
+      <find>tryToTerminateApplication</find>
+      <find>applicationShouldTerminate</find>
+      <find>SimpleApplication</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,10 +299,15 @@
         <option value="$PROJECT_DIR$/src/core/mac/WMWindow.mm" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/core/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/core/mac/AppDelegate.mm" />
         <option value="$PROJECT_DIR$/src/core/mac/WMWindow.h" />
-        <option value="$PROJECT_DIR$/src/core/mac/AppDelegate.h" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/core/mac/Application.h" />
+        <option value="$PROJECT_DIR$/src/core/mac/Application.m" />
+        <option value="$PROJECT_DIR$/src/core/main_mac.mm" />
+        <option value="$PROJECT_DIR$/src/core/mac/SimpleApp.h" />
+        <option value="$PROJECT_DIR$/src/core/mac/SimpleApp.cpp" />
+        <option value="$PROJECT_DIR$/src/core/mac/AppDelegate.mm" />
+        <option value="$PROJECT_DIR$/src/core/mac/AppDelegate.h" />
       </list>
     </option>
   </component>
@@ -222,11 +318,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="480" />
-    <option name="y" value="106" />
-    <option name="width" value="1440" />
-    <option name="height" value="813" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="23" />
+    <option name="y" value="23" />
+    <option name="width" value="1880" />
+    <option name="height" value="963" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -248,18 +344,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="we-media" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
               <item name="we-media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-media" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-media" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cefsimple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-media" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="we_media" type="b2602c69:ProjectViewProjectNode" />
+              <item name="we-media" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="mac" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,14 +388,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++/Objective-C" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/core/common" />
       <recent name="$PROJECT_DIR$/src/core" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,12 +410,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="cefsimple" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="Application.Build All">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cefclient" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefclient" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefclient">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cefclient_Helper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefclient_Helper" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefclient_Helper">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cefsimple" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefsimple" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cefsimple_Helper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="cefsimple_Helper" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="cefsimple_Helper">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="libcef_dll_wrapper" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="libcef_dll_wrapper" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="we-media" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="we_media" TARGET_NAME="we-media" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="we_media" RUN_TARGET_NAME="we-media">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.cefclient" />
+      <item itemvalue="Application.cefclient_Helper" />
+      <item itemvalue="Application.cefsimple" />
+      <item itemvalue="Application.cefsimple_Helper" />
+      <item itemvalue="Application.we-media" />
+      <item itemvalue="Application.libcef_dll_wrapper" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -340,11 +499,12 @@
       <workItem from="1536983193312" duration="14122000" />
       <workItem from="1537073874940" duration="1034000" />
       <workItem from="1537195790610" duration="171000" />
+      <workItem from="1537198396738" duration="3316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134095000" />
+    <option name="totallyTimeSpent" value="137411000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,9 +516,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="297" y="101" width="1440" height="813" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49234137" visible="true" weight="0.19670959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49234137" visible="true" weight="0.1485623" />
       <window_info id="Structure" order="1" sideWeight="0.50765866" side_tool="true" weight="0.21968617" />
       <window_info id="Favorites" order="2" sideWeight="0.50765866" side_tool="true" weight="0.21968617" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -373,7 +534,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="CMake" order="12" visible="true" weight="0.22468793" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.18305084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -409,83 +570,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///System/Library/Frameworks/Foundation.framework/Headers/NSUserNotification.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="121" column="62" selection-start-line="121" selection-start-column="62" selection-end-line="121" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/cmake/cef_macros.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/src/core/Debug/we-media.app/Contents/Info.plist" />
-    <entry file="file://$PROJECT_DIR$/src/core/main_mac.mm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cefclient/cefclient_mac.mm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/mac/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/core/mac/WMWindow.mm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="79" column="51" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/mac/WMWindow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/mac/AppDelegate.mm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeCache.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4409" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we_media.xcodeproj/project.pbxproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/we_media.xcodeproj/xcuserdata/gao.xcuserdatad/xcschemes/xcschememanagement.plist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/we_media.xcodeproj/project.xcworkspace/contents.xcworkspacedata">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -588,13 +672,6 @@
         <state relative-caret-position="-478" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cefclient/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -617,22 +694,8 @@
         <state relative-caret-position="-1928" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/mac/AppDelegate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake_install.cmake">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cefsimple/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -641,10 +704,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cefsimple/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1531">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cefsimple/cefsimple_win.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding>
+            <element signature="e#628#793#0" expanded="true" />
+            <element signature="e#1235#1479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cefsimple/resource.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/main_mac.mm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/Application.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/WMWindow.mm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cefsimple/simple_app.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="2" selection-start-line="7" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/SimpleApp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/SimpleApp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-822">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="e#1429#1743#0" expanded="true" />
+            <element signature="e#2684#2825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cefsimple/simple_app.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#189#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/WMWindow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#103#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/Application.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cefsimple/cefsimple_mac.mm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#242#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/AppDelegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/mac/AppDelegate.mm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>

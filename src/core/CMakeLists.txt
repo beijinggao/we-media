@@ -5,8 +5,6 @@
 set(WE_MEDIA_MAC_SRCS
         mac/AppDelegate.h
         mac/AppDelegate.mm
-        mac/WMWindow.h
-        Mac/WMWindow.mm
         )
 
 source_group(core\\\\mac FILES ${WE_MEDIA_MAC_SRCS})
