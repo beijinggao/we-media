@@ -5,6 +5,10 @@
 set(WE_MEDIA_MAC_SRCS
         mac/AppDelegate.h
         mac/AppDelegate.mm
+        mac/Application.h
+        mac/Application.m
+        mac/SimpleApp.h
+        mac/SimpleApp.cpp
         )
 
 source_group(core\\\\mac FILES ${WE_MEDIA_MAC_SRCS})
