@@ -5,11 +5,13 @@
 #import <Cocoa/Cocoa.h>
 #import "mac/Application.h"
 #import "mac/AppDelegate.h"
+#include "mac/SimpleApp.h"
 #include "include/internal/cef_mac.h"
 #include "include/internal/cef_ptr.h"
+#include "include/cef_application_mac.h"
 
 
-int main(int argc, const char * argv[]) {
+int main(int argc, char * argv[]) {
     // Provide CEF with command-line arguments.
     CefMainArgs main_args(argc, argv);
 
@@ -50,5 +52,5 @@ int main(int argc, const char * argv[]) {
     [autopool release];
 
 
-    return NSApplicationMain(argc, argv);
+    return 0;
 }

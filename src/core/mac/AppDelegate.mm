@@ -3,6 +3,7 @@
 //
 
 #import "AppDelegate.h"
+#include "SimpleHandler.h"
 
 
 @implementation AppDelegate

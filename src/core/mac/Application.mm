@@ -4,6 +4,8 @@
 
 #include "Application.h"
 #import "AppDelegate.h"
+#include "include/cef_application_mac.h"
+#include "include/wrapper/cef_helpers.h"
 
 @implementation Application
 - (BOOL)isHandlingSendEvent {
@@ -57,7 +59,7 @@
 // The standard |-applicationShouldTerminate:| is not supported, and code paths
 // leading to it must be redirected.
 - (void)terminate:(id)sender {
-    SimpleAppDelegate* delegate =
+    AppDelegate* delegate =
             static_cast<AppDelegate*>([NSApp delegate]);
     [delegate tryToTerminateApplication:self];
     // Return, don't exit. The application is responsible for exiting on its own.
