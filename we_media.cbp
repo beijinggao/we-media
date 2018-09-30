@@ -359,6 +359,60 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="we-media_Helper">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/core/Debug/we-media Helper.app/Contents/MacOS/we-media Helper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/core/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 we-media_Helper"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="we-media_Helper/fast">
+				<Option output="/Users/gaodong/Documents/mobile/we-media/src/core/Debug/we-media Helper.app/Contents/MacOS/we-media Helper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/gaodong/Documents/mobile/we-media/src/core/Debug"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/include"/>
+					<Add directory="/Users/gaodong/Documents/mobile/we-media/third_party/cef/cef_binary_3.3497.1827.ga4f7e36_macosx64"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 we-media_Helper/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/gaodong/Documents/mobile/we-media/src/core/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefclient/browser/binding_test.cc">
 			<Option target="cefclient"/>
@@ -723,19 +777,46 @@
 		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/cefsimple/simple_handler_mac.mm">
 			<Option target="cefsimple"/>
 		</Unit>
-		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/Mac/WMWindow.h">
-			<Option target="we-media"/>
-		</Unit>
-		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/Mac/WMWindow.mm">
-			<Option target="we-media"/>
-		</Unit>
 		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/AppDelegate.h">
 			<Option target="we-media"/>
 		</Unit>
 		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/AppDelegate.mm">
 			<Option target="we-media"/>
 		</Unit>
-		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/WMWindow.h">
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/Application.h">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/Application.mm">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/ProcessHelperMac.cc">
+			<Option target="we-media_Helper"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/SimpleApp.cpp">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/SimpleApp.h">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/SimpleHandler.cpp">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/SimpleHandler.h">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/SimpleHandlerMac.mm">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/res/English.lproj/InfoPlist.strings">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/res/English.lproj/MainMenu.xib">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/res/Info.plist">
+			<Option target="we-media"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/res/cefsimple.icns">
 			<Option target="we-media"/>
 		</Unit>
 		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/main_mac.mm">
@@ -2539,6 +2620,9 @@
 			<Option virtualFolder="CMake Files\src\core\"/>
 		</Unit>
 		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/res/Info.plist">
+			<Option virtualFolder="CMake Files\src\core\mac\res\"/>
+		</Unit>
+		<Unit filename="/Users/gaodong/Documents/mobile/we-media/src/core/mac/res/helper-Info.plist">
 			<Option virtualFolder="CMake Files\src\core\mac\res\"/>
 		</Unit>
 	</Project>

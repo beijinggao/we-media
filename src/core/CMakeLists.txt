@@ -11,10 +11,17 @@ set(WE_MEDIA_MAC_SRCS
         mac/SimpleApp.cpp
         mac/SimpleHandler.h
         mac/SimpleHandler.cpp
+        mac/SimpleHandlerMac.mm
         )
 
 source_group(core\\\\mac FILES ${WE_MEDIA_MAC_SRCS})
 
+# cefsimple helper sources.
+set(WE_MEDIA_HELPER_SRCS_MACOSX
+        mac/ProcessHelperMac.cpp
+        )
+APPEND_PLATFORM_SOURCES(WE_MEDIA_HELPER_SRCS)
+source_group(core\\\\mac FILES ${WE_MEDIA_HELPER_SRCS})
 
 #cefclient Mac OS X sources
 set(WE_MEDIA_MACOSX_SRCS
@@ -26,12 +33,22 @@ source_group(core FILES ${WE_MEDIA_MACOSX_SRCS})
 # cefsimple resources.
 set(WE_MEDIA_RESOURCES_MAC_SRCS_MACOSX
         mac/res/Info.plist
+        mac/res/cefsimple.icns
         )
 APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_MAC_SRCS)
 source_group(core\\\\mac\\\\res FILES ${WE_MEDIA_RESOURCES_MAC_SRCS})
 
+set(WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS_MACOSX
+        mac/res/English.lproj/InfoPlist.strings
+        mac/res/English.lproj/MainMenu.xib
+        )
+APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS)
+source_group(core\\\\mac\\\\res\\\\English.lproj FILES ${WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS})
+
+
 set(WE_MEDIA_RESOURCES_SRCS
         ${WE_MEDIA_RESOURCES_MAC_SRCS}
+        ${WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS}
         )
 
 # Target executable names.
@@ -55,17 +72,34 @@ if(OS_MACOSX)
             ${WE_MEDIA_MACOSX_SRCS}
             )
 
+    set(WEMEDIA_HELPER_TARGET "we-media_Helper")
+    set(WEMEDIA_HELPER_OUTPUT_NAME "we-media Helper")
+
     # Output paths for the app bundles.
     set(WEMEDIA_APP "${CEF_TARGET_OUT_DIR}/${WEMEDIA_TARGET}.app")
+    set(WEMEDIA_HELPER_APP "${CEF_TARGET_OUT_DIR}/${WEMEDIA_HELPER_OUTPUT_NAME}.app")
 
     # Variable referenced from Info.plist files.
     set(PRODUCT_NAME "${WEMEDIA_TARGET}")
 
+    # Helper executable target.
+    add_executable(${WEMEDIA_HELPER_TARGET} MACOSX_BUNDLE ${WE_MEDIA_HELPER_SRCS})
+    SET_EXECUTABLE_TARGET_PROPERTIES(${WEMEDIA_HELPER_TARGET})
+    add_dependencies(${WEMEDIA_HELPER_TARGET} libcef_dll_wrapper)
+    target_link_libraries(${WEMEDIA_HELPER_TARGET} libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS})
+    set_target_properties(${WEMEDIA_HELPER_TARGET} PROPERTIES
+            MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/mac/res/helper-Info.plist
+            OUTPUT_NAME ${WEMEDIA_HELPER_OUTPUT_NAME}
+            )
+
+    # Fix the framework rpath in the helper executable.
+    FIX_MACOSX_HELPER_FRAMEWORK_RPATH(${WEMEDIA_HELPER_TARGET})
+
     # Main executable target.
-    add_executable(${WEMEDIA_TARGET} MACOSX_BUNDLE ${WEMEDIA_SRCS})
+    add_executable(${WEMEDIA_TARGET} MACOSX_BUNDLE ${WE_MEDIA_RESOURCES_SRCS} ${WEMEDIA_SRCS})
     SET_EXECUTABLE_TARGET_PROPERTIES(${WEMEDIA_TARGET})
-    add_dependencies(${WEMEDIA_TARGET} libcef_dll_wrapper)
-    target_link_libraries(${WEMEDIA_TARGET} libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS} "-framework OpenGL")
+    add_dependencies(${WEMEDIA_TARGET} libcef_dll_wrapper "${WEMEDIA_HELPER_TARGET}")
+    target_link_libraries(${WEMEDIA_TARGET} libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS})
     set_target_properties(${WEMEDIA_TARGET} PROPERTIES
             MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/mac/res/Info.plist
             )
@@ -74,6 +108,10 @@ if(OS_MACOSX)
     add_custom_command(
             TARGET ${WEMEDIA_TARGET}
             POST_BUILD
+            # Copy the helper app bundle into the Frameworks directory.
+            COMMAND ${CMAKE_COMMAND} -E copy_directory
+            "${WEMEDIA_HELPER_APP}"
+            "${WEMEDIA_APP}/Contents/Frameworks/${WEMEDIA_HELPER_OUTPUT_NAME}.app"
             # Copy the CEF framework into the Frameworks directory.
             COMMAND ${CMAKE_COMMAND} -E copy_directory
             "${CEF_BINARY_DIR}/Chromium Embedded Framework.framework"
