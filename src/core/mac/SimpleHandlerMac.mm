@@ -14,6 +14,12 @@ void SimpleHandler::PlatformTitleChange(CefRefPtr<CefBrowser> browser,
   NSWindow* window = [view window];
   std::string titleStr(title);
   NSString* str = [NSString stringWithUTF8String:titleStr.c_str()];
+  NSUInteger windowStyle = NSTitledWindowMask | NSClosableWindowMask | NSMiniaturizableWindowMask | NSResizableWindowMask | NSFullSizeContentViewWindowMask;
   [window setTitle:str];
   [window center];
+  [window setStyleMask:windowStyle];
+  [window setAppearance:[NSAppearance appearanceNamed:NSAppearanceNameVibrantLight]];
+  [window setTitlebarAppearsTransparent:YES];
+  [window setTitleVisibility:NSWindowTitleHidden];
+
 }
