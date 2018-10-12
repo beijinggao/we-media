@@ -15,4 +15,5 @@ void SimpleHandler::PlatformTitleChange(CefRefPtr<CefBrowser> browser,
   std::string titleStr(title);
   NSString* str = [NSString stringWithUTF8String:titleStr.c_str()];
   [window setTitle:str];
+  [window center];
 }

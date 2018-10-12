@@ -96,7 +96,7 @@ void SimpleApp::OnContextInitialized() {
         // Information used when creating the native window.
         CefWindowInfo window_info;
         CefScreenInfo screenInfo;
-        window_info.SetAsChild(NULL,screenInfo.rect.x/2,screenInfo.rect.y/2,800,600);
+        window_info.SetAsChild(NULL,screenInfo.available_rect.x/2,screenInfo.available_rect.y/2,800,600);
         //window_info.width =800;
         //window_info.height = 600;
         //window_info.x = ;
