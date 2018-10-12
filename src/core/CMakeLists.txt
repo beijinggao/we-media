@@ -45,10 +45,35 @@ set(WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS_MACOSX
 APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS)
 source_group(core\\\\mac\\\\res\\\\English.lproj FILES ${WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS})
 
+set(WE_MEDIA_RESOURCES_HTML_MAC_SRCS_MACOSX
+        mac/res/html/login.htm
+        mac/res/html/css/4HCPitP8ZT9.css
+        mac/res/html/css/ZvcBLy34iDb.css
+        mac/res/html/js/fbevents.js
+        mac/res/html/js/0VHSCIdeo-7.js
+        mac/res/html/js/4Lrn03CojQY.js
+        mac/res/html/js/106mWwOdaQc.js
+        mac/res/html/js/agaaxOoNaht.js
+        mac/res/html/js/aKKaDLg6cM7.js
+        mac/res/html/js/BGl7oDL8Em2.js
+        mac/res/html/js/c2Ep_m78lwa.js
+        mac/res/html/js/CD02CfEgs_A.js
+        mac/res/html/js/Ilm1TuLsvhw.js
+        mac/res/html/js/k0kqXaiDWnJ.js
+        mac/res/html/js/sOiK3R2YIAy.js
+        mac/res/html/js/W0sXB4uYYyH.js
+        mac/res/html/js/xALXySgI5G9.js
+        mac/res/html/js/yEQ4aOhmjyj.js
+        mac/res/html/js/zHR-Nmgf70-.js
+        )
+APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_HTML_MAC_SRCS)
+source_group(core\\\\mac\\\\res FILES ${WE_MEDIA_RESOURCES_HTML_MAC_SRCS})
+
 
 set(WE_MEDIA_RESOURCES_SRCS
         ${WE_MEDIA_RESOURCES_MAC_SRCS}
         ${WE_MEDIA_RESOURCES_MAC_ENGLISH_LPROJ_SRCS}
+        ${WE_MEDIA_RESOURCES_HTML_MAC_SRCS}
         )
 
 # Target executable names.
