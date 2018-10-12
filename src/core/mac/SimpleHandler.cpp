@@ -5,6 +5,7 @@
 #include "SimpleHandler.h"
 #include <sstream>
 #include <string>
+#include <iostream>
 
 #include "include/base/cef_bind.h"
 #include "include/cef_app.h"
@@ -128,4 +129,40 @@ void SimpleHandler::CloseAllBrowsers(bool force_close) {
     BrowserList::const_iterator it = browser_list_.begin();
     for (; it != browser_list_.end(); ++it)
         (*it)->GetHost()->CloseBrowser(force_close);
+}
+
+void SimpleHandler::OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
+                                    CefRefPtr<CefFrame> frame,
+                                    CefRefPtr<CefContextMenuParams> params,
+                                    CefRefPtr<CefMenuModel> model) {
+    //model->Clear();
+
+    std::cout<< model.get() << std::endl;
+    std::cout<< model->GetCount() << std::endl;
+    std::cout<< "*********" << std::endl;
+
+    //在这里，我添加了自己想要的菜单
+    cef_context_menu_type_flags_t flag =   params->GetTypeFlags();
+    if ( flag & CM_TYPEFLAG_PAGE )
+    {//普通页面的右键消息
+        model->SetLabel(MENU_ID_BACK, L"后退");
+        model->SetLabel(MENU_ID_FORWARD, L"前进");
+        model->SetLabel(MENU_ID_VIEW_SOURCE, L"查看源代码");
+        model->SetLabel(MENU_ID_PRINT, L"打印");
+        model->SetLabel(MENU_ID_RELOAD, L"刷新");
+        model->SetLabel(MENU_ID_RELOAD_NOCACHE, L"强制刷新");
+        model->SetLabel(MENU_ID_STOPLOAD, L"停止加载");
+        model->SetLabel(MENU_ID_REDO, L"重复");
+    }
+    if ( flag & CM_TYPEFLAG_EDITABLE)
+    {//编辑框的右键消息
+        model->SetLabel(MENU_ID_UNDO, L"撤销");
+        model->SetLabel(MENU_ID_REDO, L"重做");
+        model->SetLabel(MENU_ID_CUT, L"剪切");
+        model->SetLabel(MENU_ID_COPY, L"复制");
+        model->SetLabel(MENU_ID_PASTE, L"粘贴");
+        model->SetLabel(MENU_ID_DELETE, L"删除");
+        model->SetLabel(MENU_ID_SELECT_ALL, L"全选");
+    }
+
 }
