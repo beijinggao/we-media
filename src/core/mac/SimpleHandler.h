@@ -30,6 +30,10 @@ public:
     }
     virtual CefRefPtr<CefLoadHandler> GetLoadHandler() OVERRIDE { return this; }
 
+    virtual CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE {
+        return this;
+    }
+
     // CefDisplayHandler methods:
     virtual void OnTitleChange(CefRefPtr<CefBrowser> browser,
                                const CefString& title) OVERRIDE;

@@ -135,14 +135,14 @@ void SimpleHandler::OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
                                     CefRefPtr<CefFrame> frame,
                                     CefRefPtr<CefContextMenuParams> params,
                                     CefRefPtr<CefMenuModel> model) {
-    //model->Clear();
+    model->Clear();
 
     std::cout<< model.get() << std::endl;
     std::cout<< model->GetCount() << std::endl;
     std::cout<< "*********" << std::endl;
 
     //在这里，我添加了自己想要的菜单
-    cef_context_menu_type_flags_t flag =   params->GetTypeFlags();
+    /*cef_context_menu_type_flags_t flag =   params->GetTypeFlags();
     if ( flag & CM_TYPEFLAG_PAGE )
     {//普通页面的右键消息
         model->SetLabel(MENU_ID_BACK, L"后退");
@@ -163,6 +163,6 @@ void SimpleHandler::OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
         model->SetLabel(MENU_ID_PASTE, L"粘贴");
         model->SetLabel(MENU_ID_DELETE, L"删除");
         model->SetLabel(MENU_ID_SELECT_ALL, L"全选");
-    }
+    }*/
 
 }
