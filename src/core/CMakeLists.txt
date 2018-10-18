@@ -8,7 +8,7 @@ set(WE_MEDIA_MAC_SRCS
         mac/Application.h
         mac/Application.mm
         mac/SimpleApp.h
-        mac/SimpleApp.cpp
+        mac/SimpleApp.mm
         mac/SimpleHandler.h
         mac/SimpleHandler.cpp
         mac/SimpleHandlerMac.mm

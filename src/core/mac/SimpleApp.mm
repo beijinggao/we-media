@@ -5,6 +5,7 @@
 #include "SimpleApp.h"
 
 #include <string>
+#include <CoreData/CoreData.h>
 
 #include "include/cef_browser.h"
 #include "include/cef_command_line.h"
@@ -13,6 +14,9 @@
 #include "include/wrapper/cef_helpers.h"
 #include "SimpleHandler.h"
 
+
+NSString* spath = [@"file:" stringByAppendingString: [[NSBundle mainBundle] resourcePath]];
+std::string path = [spath UTF8String];
 
 namespace {
 
@@ -83,8 +87,8 @@ void SimpleApp::OnContextInitialized() {
     // that instead of the default URL.
     url = command_line->GetSwitchValue("url");
     if (url.empty())
-        url = "https://www.messenger.com/login";
-        //url= "/html/login.htm";
+        //url = "https://www.messenger.com/login";
+        url= path + "/html/login.htm";
 
     if (use_views) {
         // Create the BrowserView.
