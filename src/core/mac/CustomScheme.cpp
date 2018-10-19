@@ -39,13 +39,15 @@ namespace {
             if (strstr(url.c_str(), "handler.html") != NULL) {
                 // Build the response html
                 data_ =
-                        "<html><head><title>Client Scheme Handler</title></head>"
+                        "<html><head><title>Client Scheme Handler</title>"
+                                "<link rel=\"shortcut icon\" href=\"http://tests/html/imgs/O6n_HQxozp9.ico\">"
+                                "</head>"
                                 "<body bgcolor=\"white\">"
                                 "This contents of this page page are served by the "
                                 "ClientSchemeHandler class handling the client:// protocol."
                                 "<br/>You should see an image:"
-                                "<br/><img src=\"/html/imgs/logo.png\">"
-                                "<br/><img src=\"client://tests/html/imgs/O6n_HQxozp9.ico\"><pre>";
+                                "<br/><img src=\"http://tests/html/imgs/logo.png\">"
+                                "<br/><img src=\"http://tests/html/imgs/O6n_HQxozp9.ico\"><pre>";
 
                 // Output a string representation of the request
                 const std::string &dump = test_runner::DumpRequestContents(request);
@@ -147,7 +149,7 @@ namespace {
 }  // namespace
 
 void RegisterSchemeHandlers() {
-    CefRegisterSchemeHandlerFactory("client", "tests",
+    CefRegisterSchemeHandlerFactory("http", "tests",
                                     new ClientSchemeHandlerFactory());
 }
 
