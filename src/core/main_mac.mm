@@ -9,6 +9,7 @@
 #include "include/internal/cef_mac.h"
 #include "include/internal/cef_ptr.h"
 #include "include/cef_application_mac.h"
+#include "mac/CustomScheme.h"
 
 
 int main(int argc, char * argv[]) {
@@ -31,6 +32,8 @@ int main(int argc, char * argv[]) {
 
     // Initialize CEF for the browser process.
     CefInitialize(main_args, settings, app.get(), NULL);
+
+    RegisterSchemeHandlers();
 
     // Create the application delegate.
     NSObject* delegate = [[AppDelegate alloc] init];

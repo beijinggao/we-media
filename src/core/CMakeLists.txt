@@ -12,6 +12,13 @@ set(WE_MEDIA_MAC_SRCS
         mac/SimpleHandler.h
         mac/SimpleHandler.cpp
         mac/SimpleHandlerMac.mm
+        mac/CustomScheme.h
+        mac/CustomScheme.cpp
+        mac/test_runner.h
+        mac/test_runner.cc
+        mac/resource_util.h
+        mac/resource_util_posix.cc
+        mac/resource_util_mac.mm
         )
 
 source_group(core\\\\mac FILES ${WE_MEDIA_MAC_SRCS})
@@ -65,6 +72,8 @@ set(WE_MEDIA_RESOURCES_HTML_MAC_SRCS_MACOSX
         mac/res/html/js/xALXySgI5G9.js
         mac/res/html/js/yEQ4aOhmjyj.js
         mac/res/html/js/zHR-Nmgf70-.js
+        mac/res/html/imgs/O6n_HQxozp9.ico
+        mac/res/html/imgs/logo.png
         )
 APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_HTML_MAC_SRCS)
 source_group(core\\\\mac\\\\res FILES ${WE_MEDIA_RESOURCES_HTML_MAC_SRCS})
