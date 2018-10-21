@@ -169,38 +169,53 @@ endif()
 # Windows configuration.
 #
 
+set(WE_MEDIA_SRCS_WINDOWS
+  win/simple_app.cc
+  win/simple_app.h
+  win/simple_handler.cc
+  win/simple_handler.h
+  win/cefsimple.exe.manifest
+  win/cefsimple.rc
+  main_win.cc
+  win/resource.h
+  win/simple_handler_win.cc
+  )
+
+APPEND_PLATFORM_SOURCES(WE_MEDIA_SRCS)
+source_group(core\\\\win FILES ${WE_MEDIA_SRCS})
+
+
+set(WE_MEDIA_RES_SRCS_WINDOWS
+  win/res/cefsimple.ico
+  win/res/small.ico
+  )
+APPEND_PLATFORM_SOURCES(WE_MEDIA_RES_SRCS)
+source_group(core\\\\win\\\\res FILES ${WE_MEDIA_RES_SRCS})
+
+
 if(OS_WINDOWS)
-    # All sources required by the "cefclient" target. Generates an executable that
-    # is used for all processes.
-    set(CEFCLIENT_SRCS
-            ${CEFCLIENT_BROWSER_SRCS}
-            ${CEFCLIENT_COMMON_SRCS}
-            ${CEFCLIENT_RENDERER_SRCS}
-            ${CEFCLIENT_RESOURCES_SRCS}
-            ${CEFCLIENT_WINDOWS_SRCS}
-            )
 
-    # Executable target.
-    add_executable(${CEF_TARGET} WIN32 ${CEFCLIENT_SRCS})
-    SET_EXECUTABLE_TARGET_PROPERTIES(${CEF_TARGET})
-    add_dependencies(${CEF_TARGET} libcef_dll_wrapper)
-    target_link_libraries(${CEF_TARGET} libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS} glu32.lib imm32.lib opengl32.lib)
+ set(WE_MEDIA_SRCS
+  ${WE_MEDIA_SRCS}
+  ${WE_MEDIA_RES_SRCS}
+  )
 
-    if(USE_ATL)
-        # Required by VS2013 to link accessibility API functions.
-        target_link_libraries(${CEF_TARGET} oleacc.lib)
-    endif()
+  # Executable target.
+  add_executable(${WEMEDIA_TARGET} WIN32 ${WE_MEDIA_SRCS})
+  add_dependencies(${WEMEDIA_TARGET} libcef_dll_wrapper)
+  SET_EXECUTABLE_TARGET_PROPERTIES(${WEMEDIA_TARGET})
+  target_link_libraries(${WEMEDIA_TARGET} libcef_lib libcef_dll_wrapper ${CEF_STANDARD_LIBS})
 
-    if(USE_SANDBOX)
-        # Logical target used to link the cef_sandbox library.
-        ADD_LOGICAL_TARGET("cef_sandbox_lib" "${CEF_SANDBOX_LIB_DEBUG}" "${CEF_SANDBOX_LIB_RELEASE}")
-        target_link_libraries(${CEF_TARGET} cef_sandbox_lib ${CEF_SANDBOX_STANDARD_LIBS})
-    endif()
+  if(USE_SANDBOX)
+    # Logical target used to link the cef_sandbox library.
+    ADD_LOGICAL_TARGET("cef_sandbox_lib" "${CEF_SANDBOX_LIB_DEBUG}" "${CEF_SANDBOX_LIB_RELEASE}")
+    target_link_libraries(${WEMEDIA_TARGET} cef_sandbox_lib ${CEF_SANDBOX_STANDARD_LIBS})
+  endif()
 
-    # Add the custom manifest files to the executable.
-    ADD_WINDOWS_MANIFEST("${CMAKE_CURRENT_SOURCE_DIR}/resources/win" "${CEF_TARGET}" "exe")
+  # Add the custom manifest files to the executable.
+  ADD_WINDOWS_MANIFEST("${CMAKE_CURRENT_SOURCE_DIR}/win" "${WEMEDIA_TARGET}" "exe")
 
-    # Copy CEF binary and resource files to the target output directory.
-    COPY_FILES("${CEF_TARGET}" "${CEF_BINARY_FILES}" "${CEF_BINARY_DIR}" "${CEF_TARGET_OUT_DIR}")
-    COPY_FILES("${CEF_TARGET}" "${CEF_RESOURCE_FILES}" "${CEF_RESOURCE_DIR}" "${CEF_TARGET_OUT_DIR}")
+  # Copy binary and resource files to the target output directory.
+  COPY_FILES("${WEMEDIA_TARGET}" "${CEF_BINARY_FILES}" "${CEF_BINARY_DIR}" "${CEF_TARGET_OUT_DIR}")
+  COPY_FILES("${WEMEDIA_TARGET}" "${CEF_RESOURCE_FILES}" "${CEF_RESOURCE_DIR}" "${CEF_TARGET_OUT_DIR}")
 endif()

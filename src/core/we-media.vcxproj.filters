@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\simple_app.cc">
+      <Filter>core\win</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\simple_handler.cc">
+      <Filter>core\win</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\core\main_win.cc">
+      <Filter>core\win</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\simple_handler_win.cc">
+      <Filter>core\win</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\simple_app.h">
+      <Filter>core\win</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\simple_handler.h">
+      <Filter>core\win</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\resource.h">
+      <Filter>core\win</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\GAO\Documents\workspace\we-media\src\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\res\cefsimple.ico">
+      <Filter>core\win\res</Filter>
+    </None>
+    <None Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\res\small.ico">
+      <Filter>core\win\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\GAO\Documents\workspace\we-media\src\core\win\cefsimple.rc">
+      <Filter>core\win</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{C18DEE9F-66EF-3B8A-8835-B9F623262807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\win">
+      <UniqueIdentifier>{579534A0-869E-3258-B0D2-8FB4DC591DEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\win\res">
+      <UniqueIdentifier>{5363A9ED-516B-30A3-A5EF-71960F057E58}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
