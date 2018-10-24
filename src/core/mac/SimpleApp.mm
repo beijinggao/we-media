@@ -90,6 +90,7 @@ void SimpleApp::OnContextInitialized() {
         //url = "https://www.messenger.com/login";
         //url= path + "/html/login.htm";
         url = "http://tests/html/login.htm";
+        //url = "http://tests/html/imgs/logo.png";
 
     if (use_views) {
         // Create the BrowserView.

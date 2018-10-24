@@ -74,6 +74,10 @@ set(WE_MEDIA_RESOURCES_HTML_MAC_SRCS_MACOSX
         mac/res/html/js/zHR-Nmgf70-.js
         mac/res/html/imgs/O6n_HQxozp9.ico
         mac/res/html/imgs/logo.png
+        mac/res/html/imgs/G4pVE8lTU5a.png
+        mac/res/html/imgs/jZPS9cxhnaa.png
+        mac/res/html/imgs/O7nelmd9XSI.png
+        mac/res/html/imgs/unHwF9CkMyM.png
         )
 APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_HTML_MAC_SRCS)
 source_group(core\\\\mac\\\\res FILES ${WE_MEDIA_RESOURCES_HTML_MAC_SRCS})
