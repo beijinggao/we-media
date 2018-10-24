@@ -32,46 +32,29 @@ namespace {
 
             bool handled = false;
 
-            std::cout << "aaaaaaaaaaaaaaaddddddd******" << std::endl;
             std::string url = request->GetURL();
-            std::cout << url << std::endl;
 
-            if (strstr(url.c_str(), "handler.html") != NULL) {
-                // Build the response html
-                data_ =
-                        "<html><head><title>Client Scheme Handler</title>"
-                                "<link rel=\"shortcut icon\" href=\"http://tests/html/imgs/O6n_HQxozp9.ico\">"
-                                "</head>"
-                                "<body bgcolor=\"white\">"
-                                "This contents of this page page are served by the "
-                                "ClientSchemeHandler class handling the client:// protocol."
-                                "<br/>You should see an image:"
-                                "<br/><img src=\"http://tests/html/imgs/logo.png\">"
-                                "<br/><img src=\"http://tests/html/imgs/O6n_HQxozp9.ico\"><pre>";
-
-                // Output a string representation of the request
-                const std::string &dump = test_runner::DumpRequestContents(request);
-                data_.append(dump);
-
-                data_.append(
-                        "</pre><br/>Try the test form:"
-                                "<form method=\"POST\" action=\"handler.html\">"
-                                "<input type=\"text\" name=\"field1\">"
-                                "<input type=\"text\" name=\"field2\">"
-                                "<input type=\"submit\">"
-                                "</form></body></html>");
-
+            if (LoadBinaryResource(url.substr(12).c_str(), data_)) {
                 handled = true;
-
                 // Set the resulting mime type
-                mime_type_ = "text/html";
-            } else if (strstr(url.c_str(), "logo.png") != NULL) {
-                // Load the response image
-                if (LoadBinaryResource("/html/imgs/logo.png", data_)) {
-                    handled = true;
-                    // Set the resulting mime type
+                std::string htm = ".htm";
+                std::string js = ".js";
+                std::string png = ".png";
+                std::string css = ".css";
+                std::string str = url.substr(12).c_str();
+
+                if (ends_with(str, htm)) {
+                    mime_type_ = "text/html";
+                } else if (ends_with(str, js)) {
+                    mime_type_ = "application/x-javascript";
+                } else if (ends_with(str, png)) {
                     mime_type_ = "image/png";
+                } else if (ends_with(str, css)) {
+                    mime_type_ = "text/css";
+                } else {
+                    mime_type_ = "application";
                 }
+
             }
 
             if (handled) {
