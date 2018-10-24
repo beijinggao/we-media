@@ -78,6 +78,7 @@ set(WE_MEDIA_RESOURCES_HTML_MAC_SRCS_MACOSX
         mac/res/html/imgs/jZPS9cxhnaa.png
         mac/res/html/imgs/O7nelmd9XSI.png
         mac/res/html/imgs/unHwF9CkMyM.png
+        mac/res/html/imgs/logo_tmp.png
         )
 APPEND_PLATFORM_SOURCES(WE_MEDIA_RESOURCES_HTML_MAC_SRCS)
 source_group(core\\\\mac\\\\res FILES ${WE_MEDIA_RESOURCES_HTML_MAC_SRCS})
