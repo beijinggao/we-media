@@ -16,7 +16,7 @@
 
 namespace {
 
-    SimpleHandler* g_instance = NULL;
+    SimpleHandler *g_instance = NULL;
 
 }  // namespace
 
@@ -31,12 +31,12 @@ SimpleHandler::~SimpleHandler() {
 }
 
 // static
-SimpleHandler* SimpleHandler::GetInstance() {
+SimpleHandler *SimpleHandler::GetInstance() {
     return g_instance;
 }
 
 void SimpleHandler::OnTitleChange(CefRefPtr<CefBrowser> browser,
-                                  const CefString& title) {
+                                  const CefString &title) {
     CEF_REQUIRE_UI_THREAD();
 
     if (use_views_) {
@@ -98,8 +98,8 @@ void SimpleHandler::OnBeforeClose(CefRefPtr<CefBrowser> browser) {
 void SimpleHandler::OnLoadError(CefRefPtr<CefBrowser> browser,
                                 CefRefPtr<CefFrame> frame,
                                 ErrorCode errorCode,
-                                const CefString& errorText,
-                                const CefString& failedUrl) {
+                                const CefString &errorText,
+                                const CefString &failedUrl) {
     CEF_REQUIRE_UI_THREAD();
 
     // Don't display an error for downloaded files.
@@ -109,7 +109,7 @@ void SimpleHandler::OnLoadError(CefRefPtr<CefBrowser> browser,
     // Display a load error message.
     std::stringstream ss;
     ss << "<html><body bgcolor=\"white\">"
-          "<h2>Failed to load URL "
+            "<h2>Failed to load URL "
        << std::string(failedUrl) << " with error " << std::string(errorText)
        << " (" << errorCode << ").</h2></body></html>";
     frame->LoadString(ss.str(), failedUrl);
@@ -132,14 +132,14 @@ void SimpleHandler::CloseAllBrowsers(bool force_close) {
 }
 
 void SimpleHandler::OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
-                                    CefRefPtr<CefFrame> frame,
-                                    CefRefPtr<CefContextMenuParams> params,
-                                    CefRefPtr<CefMenuModel> model) {
+                                        CefRefPtr<CefFrame> frame,
+                                        CefRefPtr<CefContextMenuParams> params,
+                                        CefRefPtr<CefMenuModel> model) {
     model->Clear();
 
-    std::cout<< model.get() << std::endl;
-    std::cout<< model->GetCount() << std::endl;
-    std::cout<< "*********" << std::endl;
+    std::cout << model.get() << std::endl;
+    std::cout << model->GetCount() << std::endl;
+    std::cout << "*********" << std::endl;
 
     //在这里，我添加了自己想要的菜单
     /*cef_context_menu_type_flags_t flag =   params->GetTypeFlags();
@@ -166,3 +166,25 @@ void SimpleHandler::OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
     }*/
 
 }
+
+bool SimpleHandler::OnBeforeBrowse(CefRefPtr<CefBrowser> browser,
+                                   CefRefPtr<CefFrame> frame,
+                                   CefRefPtr<CefRequest> request,
+                                   bool user_gesture,
+                                   bool is_redirect) {
+    std::string url = request->GetURL();
+    if (url.find("login/password") != std::string::npos) {
+        browser->GetHost();
+        std::cout << url << std::endl;
+        CefWindowInfo window_info;
+        CefBrowserSettings browser_settings;
+        std::string url;
+        url = "http://www.baidu.com";
+        browser->GetHost()->CreateBrowser(window_info, browser->GetHost()->GetClient(), url, browser_settings, NULL);
+    }
+
+    return false;
+
+}
+
+

@@ -55,6 +55,10 @@ namespace {
                     mime_type_ = "application";
                 }
 
+            } else if (strstr(url.c_str(), "login/password/") != NULL) {
+                data_ = "{\"username\":\"admin\",\"password\":\"admin\"}";
+                mime_type_ = "text/json";
+                handled = true;
             }
 
             if (handled) {

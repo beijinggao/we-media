@@ -14,6 +14,16 @@ void SimpleHandler::PlatformTitleChange(CefRefPtr<CefBrowser> browser,
   NSWindow* window = [view window];
   std::string titleStr(title);
   NSString* str = [NSString stringWithUTF8String:titleStr.c_str()];
+  /*NSLog(@"cccccccccccccccccccc%@",str);
+
+  if([str rangeOfString:@"login"].location == NSNotFound){
+    CefWindowInfo window_info;
+    CefBrowserSettings browser_settings;
+    std::string url;
+    url="http://www.baidu.com";
+    browser->GetHost()->CreateBrowser(window_info,browser->GetHost()->GetClient(),url,browser_settings,NULL);
+  }*/
+
   NSUInteger windowStyle = NSTitledWindowMask | NSClosableWindowMask | NSMiniaturizableWindowMask | NSResizableWindowMask | NSFullSizeContentViewWindowMask;
   [window setTitle:str];
   [window center];

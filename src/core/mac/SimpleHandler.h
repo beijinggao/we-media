@@ -13,47 +13,64 @@ class SimpleHandler : public CefClient,
                       public CefDisplayHandler,
                       public CefLifeSpanHandler,
                       public CefLoadHandler,
-                      public CefContextMenuHandler{
+                      public CefContextMenuHandler,
+                      public CefRequestHandler {
 public:
     explicit SimpleHandler(bool use_views);
+
     ~SimpleHandler();
 
     // Provide access to the single global instance of this object.
-    static SimpleHandler* GetInstance();
+    static SimpleHandler *GetInstance();
 
     // CefClient methods:
     virtual CefRefPtr<CefDisplayHandler> GetDisplayHandler() OVERRIDE {
         return this;
     }
+
     virtual CefRefPtr<CefLifeSpanHandler> GetLifeSpanHandler() OVERRIDE {
         return this;
     }
+
     virtual CefRefPtr<CefLoadHandler> GetLoadHandler() OVERRIDE { return this; }
 
     virtual CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE {
         return this;
     }
 
+    virtual CefRefPtr<CefRequestHandler> GetRequestHandler() OVERRIDE {
+        return this;
+    }
+
+
     // CefDisplayHandler methods:
     virtual void OnTitleChange(CefRefPtr<CefBrowser> browser,
-                               const CefString& title) OVERRIDE;
+                               const CefString &title) OVERRIDE;
 
     // CefLifeSpanHandler methods:
     virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) OVERRIDE;
+
     virtual bool DoClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
+
     virtual void OnBeforeClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
 
     // CefLoadHandler methods:
     virtual void OnLoadError(CefRefPtr<CefBrowser> browser,
                              CefRefPtr<CefFrame> frame,
                              ErrorCode errorCode,
-                             const CefString& errorText,
-                             const CefString& failedUrl) OVERRIDE;
+                             const CefString &errorText,
+                             const CefString &failedUrl) OVERRIDE;
 
     virtual void OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
                                      CefRefPtr<CefFrame> frame,
                                      CefRefPtr<CefContextMenuParams> params,
                                      CefRefPtr<CefMenuModel> model) OVERRIDE;
+
+    virtual bool OnBeforeBrowse(CefRefPtr<CefBrowser> browser,
+                                CefRefPtr<CefFrame> frame,
+                                CefRefPtr<CefRequest> request,
+                                bool user_gesture,
+                                bool is_redirect) OVERRIDE;
 
     // Request that all existing browser windows close.
     void CloseAllBrowsers(bool force_close);
@@ -63,7 +80,7 @@ public:
 private:
     // Platform-specific implementation.
     void PlatformTitleChange(CefRefPtr<CefBrowser> browser,
-                             const CefString& title);
+                             const CefString &title);
 
     // True if the application is using the Views framework.
     const bool use_views_;
@@ -77,7 +94,6 @@ private:
     // Include the default reference counting implementation.
 IMPLEMENT_REFCOUNTING(SimpleHandler);
 };
-
 
 
 #endif //WE_MEDIA_SIMPLEHANDLER_H
